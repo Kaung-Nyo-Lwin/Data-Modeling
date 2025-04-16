@@ -137,7 +137,7 @@ ON CREATE SET
 
 ## ER Diagram
 
-![ER Diagram](figure/E.png)
+![ER Diagram](figure/ER.png)
 
 ## Key Features
 
