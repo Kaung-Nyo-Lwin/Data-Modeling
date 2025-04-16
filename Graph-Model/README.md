@@ -145,7 +145,7 @@ ON CREATE SET
 
 ## Whole Graph
 
-![Whole Graph](figure/full_graph_visualization.png)
+![Whole Graph](figure/full_graph_visualisation.png)
 
 ## Key Features
 
