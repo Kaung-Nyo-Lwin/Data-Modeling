@@ -135,9 +135,17 @@ ON CREATE SET
     pr1.totalSpent = 0.0
 ```
 
-## ER Diagram
+## Entity Relationship Diagram
 
-![ER Diagram](figure/ER.png)
+![ER Diagram](figure/ER_GraphModel.png)
+
+## Initial Data Model
+
+![Data Model](figure/graph_data_model.png)
+
+## Whole Graph
+
+![Whole Graph](figure/full_graph_visualization.png)
 
 ## Key Features
 
