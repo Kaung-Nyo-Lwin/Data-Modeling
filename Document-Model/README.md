@@ -17,65 +17,159 @@ The document model approach organizes data in flexible, JSON-like documents, all
 1. **Users**
 ```json
 {
-  "_id": ObjectId,
-  "name": String,
-  "email": String,
-  "phone": String,
-  "address": String,
-  "preferredRange": Number,
-  "bookings": [{ /* References to bookings */ }],
-  "reviews": [{ /* User's reviews */ }],
-  "createdAt": Date,
-  "updatedAt": Date
+  "_id": {
+    "$oid": "67bca321a88c21f2dc648c9b"
+  },
+  "id": 1,
+  "name": "Alice Johnson",
+  "email": "alice.johnson@example.com",
+  "phone": "9876543210",
+  "address": "5678 Oak St",
+  "preferedRange": "5 - 10",
+  "isCustomer": true,
+  "isOwner": false,
+  "rating": 4.2,
+  "createdAt": "2021-02-15 10:30:00",
+  "updatedAt": "2021-06-10 14:20:00"
 }
 ```
 
 2. **Spaces**
 ```json
 {
-  "_id": ObjectId,
-  "name": String,
-  "description": String,
-  "location": {
-    "address": String,
-    "coordinates": [Number],
-    "area": String
+  "id": 8,
+  "name": "Space H",
+  "Owner": {
+    "id": 5,
+    "name": "Ethan Wright",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648c9f"
+    }
   },
-  "amenities": [String],
-  "capacity": Number,
-  "pricePerHour": Number,
-  "availability": [{
-    "date": Date,
-    "slots": [{ "start": Date, "end": Date }]
-  }],
-  "reviews": [{
-    "userId": ObjectId,
-    "rating": Number,
-    "comment": String,
-    "date": Date
-  }]
+  "location": "Suburbs",
+  "address": "4567 Cedar Rd",
+  "size": "160",
+  "numRooms": 3,
+  "hourlyRate": 13,
+  "halfdayRate": 115,
+  "fulldayRate": 210,
+  "rating": 4.4,
+  "rentFrom": "07:00:00",
+  "rentTo": "18:00:00",
+  "discount": 0.18,
+  "status": "open",
+  "remark": "Quiet and peaceful space",
+  "createdAt": {
+    "$date": "2021-11-15T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2021-11-15T00:00:00.000Z"
+  },
+  "facilitiy": {
+    "ac": true,
+    "wifi": true,
+    "projector": true,
+    "whiteboard": false,
+    "chair": 10,
+    "tables": 5,
+    "fan": 2,
+    "toilet": 1,
+    "kitchen": true,
+    "bed": false
+  }
 }
 ```
 
 3. **Bookings**
 ```json
 {
-  "_id": ObjectId,
-  "userId": ObjectId,
-  "spaceId": ObjectId,
-  "startTime": Date,
-  "endTime": Date,
-  "totalPrice": Number,
-  "status": String,
-  "payment": {
-    "method": String,
-    "status": String,
-    "transactionId": String
+  "id": 1,
+  "customer": {
+    "name": "Natalie Carter",
+    "id": 14,
+    "createdAt": {
+      "$date": "2021-03-19T14:45:00.000Z"
+    },
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648ca8"
+    }
   },
-  "createdAt": Date,
-  "updatedAt": Date
+  "space": {
+    "id": 1,
+    "name": "Space A",
+    "location": "Downtown",
+    "hourlyRate": 10,
+    "halfdayRate": 100,
+    "fulldayRate": 180,
+    "rating": 4.5,
+    "address": "1234 Main St",
+    "spaceid": {
+      "$oid": "67bc9e44a88c21f2dc648c9a"
+    }
+  },
+  "bookingDate": "2025-01-10",
+  "startFrom": {
+    "$date": "2025-01-02T10:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2025-01-02T12:00:00.000Z"
+  },
+  "spacePrice": 20,
+  "sysFee": 0.6,
+  "total": 20.6,
+  "status": "booked",
+  "createdAt": {
+    "$date": "2024-01-01T01:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-27T06:26:50.778Z"
+  },
+  "payment": {
+    "id": 1,
+    "amountToPay": 20.6,
+    "paid": 20.6,
+    "unpaid": 0,
+    "status": "paid",
+    "transacId": "1234567890",
+    "bank": "Chase",
+    "createdAt": {
+      "$date": "2025-01-01T01:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-01T01:00:00.000Z"
+    }
+  }
 }
 ```
+4. **Feedback**
+```json
+{
+  "id": 11,
+  "customer": {
+    "id": 11,
+    "name": "Kevin Rogers",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648ca5"
+    }
+  },
+  "space": {
+    "id": 11,
+    "name": "Space K",
+    "location": "Downtown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c90"
+    }
+  },
+  "review": "Very spacious, perfect for conferences.",
+  "rating": 4.9,
+  "createdAt": "2021-05-03 00:00:00"
+}
+```
+ 
+## Entity Relationship Diagram
+
+![ER Diagram](./figure/ER.png)
+ 
 
 ## Key Features
 
@@ -150,6 +244,6 @@ db.bookings.aggregate([
 ## Directory Structure
 
 - `/mock_data`: Sample data sets for testing
-- `/script`: Database scripts and utilities
+- `/script`: Database scripts
 - `/Documentation`: Additional documentation and guides
-- `/export`: Data export utilities and templates
+- `/export`: Exported Data

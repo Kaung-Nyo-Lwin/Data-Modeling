@@ -12,63 +12,132 @@ The graph model approach represents data using nodes and relationships, making i
 
 ## Database Schema
 
-### Nodes
+### Core Labels
 
 1. **User**
 ```cypher
-(:User {
-  id: ID,
-  name: String,
-  email: String,
-  phone: String,
-  address: String,
-  preferredRange: Float,
-  createdAt: DateTime,
-  updatedAt: DateTime
-})
+(u1:User {
+    id: 1, 
+    name: 'John Doe', 
+    email: 'johndoe@example.com', 
+    phone: '1234567890', 
+    address: '123 Main St', 
+    preferedRange: 10.0, 
+    createdAt: '2023-01-01T00:00:00Z', 
+    updatedAt: '2023-01-01T00:00:00Z'
+    })
+ON CREATE SET
+    u1.numOfBookings = 0,
+    u1.totalSpent = 0.0
 ```
 
 2. **Space**
 ```cypher
-(:Space {
-  id: ID,
-  name: String,
-  description: String,
-  address: String,
-  area: String,
-  capacity: Integer,
-  pricePerHour: Float,
-  createdAt: DateTime,
-  updatedAt: DateTime
-})
+(s1:Space {
+    id: 1, 
+    name: 'Space A', 
+    address: '123 Space St', 
+    size: 100.0, 
+    numRooms: 3, 
+    hourlyRate: 20.0, 
+    halfdayRate: 100.0, 
+    fulldayRate: 180.0, 
+    rentFrom: '08:00:00', 
+    rentTo: '17:00:00', 
+    status: 'open', 
+    remark: 'Great space for events',
+    createdAt: '2025-01-01T00:00:00Z', 
+    updatedAt: '2025-01-01T00:00:00Z'
+    })
+ON CREATE SET
+    s1.rating = 0
 ```
 
 3. **Booking**
 ```cypher
-(:Booking {
-  id: ID,
-  startTime: DateTime,
-  endTime: DateTime,
-  totalPrice: Float,
-  status: String,
-  createdAt: DateTime,
-  updatedAt: DateTime
-})
+(b1:Booking {
+    id: 1, 
+    bookingDate: '2025-01-10', 
+    remark: 'First booking', 
+    createdAt: '2025-01-01T00:00:00Z', 
+    updatedAt: '2025-01-01T00:00:00Z'
+    })
 ```
 
-### Relationships
-
-1. **User-Space Relationships**
+4. **Feedback**
 ```cypher
-(user:User)-[:OWNS]->(space:Space)
-(user:User)-[:RATED {rating: Integer, comment: String, date: DateTime}]->(space:Space)
+(f1:Feedback {
+    id: 1, 
+    review: 'Great space, very clean and well-maintained.',
+    createdAt: '2025-01-01T00:00:00Z', 
+    updatedAt: '2025-01-01T00:00:00Z'
+    })
 ```
 
-2. **Booking Relationships**
+5. **Payment**
 ```cypher
-(user:User)-[:BOOKED]->(booking:Booking)-[:FOR]->(space:Space)
-(booking:Booking)-[:PAID {method: String, transactionId: String}]->(payment:Payment)
+(p1:Payment {
+    id: 1, 
+    amount: 100.0, 
+    transacId: 'TXN12345', 
+    bank: 'Bank A', 
+    status: 'completed', 
+    createdAt: '2025-01-01T00:00:00Z', 
+    updatedAt: '2025-01-01T00:00:00Z'
+    })
 ```
+
+6. **Timeslot**
+```cypher
+(t1:Timeslot {slot: '09_10'})
+ON CREATE SET
+    t1.numOfBookings = 0,
+    t1.totalSpent = 0.0
+```
+
+7. **Day**
+```cypher
+(d1:Day {day: 'Monday'})
+ON CREATE SET
+    d1.numOfBookings = 0,
+    d1.totalSpent = 0.0
+```
+
+8. **Month**
+```cypher
+(m1:Month {month: 'January'})
+ON CREATE SET
+    m1.numOfBookings = 0,
+    m1.totalSpent = 0.0
+```
+
+9. **Year**
+```cypher
+(y1:Year {year: 2025})
+ON CREATE SET
+    y1.numOfBookings = 0,
+    y1.totalSpent = 0.0
+```
+
+10. **Season**
+```cypher
+(se1:Season {season: 'Winter'})
+ON CREATE SET
+    se1.numOfBookings = 0,
+    se1.totalSpent = 0.0
+```
+
+11. **PriceRange**
+```cypher
+(pr1:PriceRange {minPrice: 20.0, maxPrice: 25.0})
+ON CREATE SET
+    pr1.numOfBookings = 0,
+    pr1.totalSpent = 0.0
+```
+
+## ER Diagram
+
+![ER Diagram](figure/E.png)
 
 ## Key Features
 
@@ -119,23 +188,23 @@ The graph model approach represents data using nodes and relationships, making i
 
 1. **Find Available Spaces Near User**
 ```cypher
-MATCH (u:User {id: $userId})
-MATCH (s:Space)
-WHERE NOT (s)<-[:FOR]-(:Booking {status: 'ACTIVE'})
-  AND distance(point(u.location), point(s.location)) <= u.preferredRange
-RETURN s
+MATCH (y:Year {year: 2025}) - [yf:YEAR_OF] -> (m:Month)
+RETURN y, yf, m
 ```
 
 2. **Get User Booking History with Ratings**
 ```cypher
-MATCH (u:User {id: $userId})-[:BOOKED]->(b:Booking)-[:FOR]->(s:Space)
-OPTIONAL MATCH (u)-[r:RATED]->(s)
-RETURN b, s, r
-ORDER BY b.startTime DESC
+MATCH (u:User {id: 1}) - [by:BOOKED_BY] -> (b:Booking) - [bf:BOOKED_FOR] -> (s:Space)
+WITH u, b, s, by, bf
+MATCH (s)-[li:LOCATED_IN] -> (l:Location {name: 'Downtown'})
+WITH u, b, s, by, bf, l, li 
+MATCH (s)-[ipr:IN_PRICE_RANGE] -> (pr:PriceRange)
+WHERE u.preferedRange >= pr.minPrice AND u.preferedRange <= pr.maxPrice
+RETURN u, b, s, l, pr, by, bf, li, ipr
 ```
 
 ## Directory Structure
 
 - `/figure`: Visualization diagrams and models
-- `/scripts`: Cypher scripts and utilities
-- `/mock_data`: Sample datasets and test data
+- `/scripts`: Cypher script
+- `/Documentation`: Documentation

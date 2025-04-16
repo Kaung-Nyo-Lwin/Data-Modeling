@@ -85,6 +85,4 @@ Feel free to contribute to any of the implementations by:
 2. Creating a feature branch
 3. Submitting a pull request
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
