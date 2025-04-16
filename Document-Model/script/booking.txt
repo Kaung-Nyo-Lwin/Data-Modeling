@@ -1,0 +1,85 @@
+db.booking.insertOne({
+  id: 1,
+  customer: {
+    id: 14,
+    name: "Natalie Carter"
+  },
+  space: {
+    id: 1,
+    name: "Space A",
+    location: "Downtown",
+    hourlyRate: 10,
+    halfdayRate: 100,
+    fulldayRate: 180,
+    rating: 4.5,
+    address: "1234 Main St"
+  },
+  bookingDate: ISODate("2025-01-01T00:00:00Z"),
+  startFrom: ISODate("2025-01-01T10:00:00Z"),
+  endAt: ISODate("2025-01-01T12:00:00Z"),
+  status: "booked",
+  createdAt: ISODate("2025-01-01T01:00:00Z"),
+  updatedAt: ISODate("2025-01-01T01:00:00Z"),
+  payment: null
+});
+
+
+db.booking.updateOne(
+  { id: 1 }, // Search condition
+  [
+    {
+      $set: {
+        spacePrice: {
+          $let: {
+            vars: {
+              hours: {
+                $dateDiff: { 
+                  startDate: "$startFrom", 
+                  endDate: "$endAt", 
+                  unit: "hour" 
+                }
+              }
+            },
+            in: {
+              $switch: {
+                branches: [
+                  { 
+                    case: { $lt: [ "$$hours", 12 ] }, 
+                    then: { $multiply: [ "$space.hourlyRate", "$$hours" ] } 
+                  },
+                  { 
+                    case: { $eq: [ "$$hours", 12 ] }, 
+                    then: "$space.halfdayRate"
+                  },
+                  { 
+                    case: { $eq: [ "$$hours", 24 ] }, 
+                    then: "$space.fulldayRate"
+                  },
+                  { 
+                    case: { $and: [ { $gt: [ "$$hours", 12 ] }, { $lt: [ "$$hours", 24 ] } ] }, 
+                    then: { 
+                      $add: [ 
+                        "$space.halfdayRate", 
+                        { $multiply: [ "$space.hourlyRate", { $subtract: [ "$$hours", 12 ] } ] }
+                      ]
+                    }
+                  }
+                ],
+                default: 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      $set: {
+        sysFee: { $multiply: ["$spacePrice", 0.03] },
+        total: { $add: ["$spacePrice", { $multiply: ["$spacePrice", 0.03] }] },
+        updatedAt: new Date() // Updates timestamp
+      }
+    }
+  ],
+  { upsert: true } // Inserts if not found
+);
+

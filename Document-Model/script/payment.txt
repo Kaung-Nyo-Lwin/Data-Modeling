@@ -1,0 +1,19 @@
+db.booking.updateOne(
+  { id: 1 }, 
+  { 
+    $set: { 
+      status: "rent",
+      payment: {
+        id: 1,
+        amountToPay: 20.6,
+        paid: 20.6,
+        unpaid: 0,
+        status: "paid",
+        transacId: "1234567890",
+        bank: "Chase",
+        createdAt: ISODate("2025-01-01T01:00:00Z"),
+        updatedAt: ISODate("2025-01-01T01:00:00Z")
+      }
+    }
+  }
+);

@@ -1,0 +1,61 @@
+db.booking.aggregate([
+  {
+    $match: {
+      // Filter documents based on endAt date range (start date to end date)
+      endAt: {
+        $gte: ISODate("2023-01-20T17:00:00.000Z"), // Replace <Start Date> with your start date (e.g., "2025-01-01T00:00:00Z")
+        $lte: ISODate("2025-12-20T17:00:00.000Z")    // Replace <End Date> with your end date (e.g., "2025-12-31T23:59:59Z")
+      }
+    }
+  },
+  {
+    $project: {
+      // Extract day of the week from endAt (1 = Sunday, 2 = Monday, ..., 7 = Saturday)
+      dayOfWeek: { $dayOfWeek: "$endAt" },
+      spacePrice: 1,
+      sysFee: 1,
+      total: 1
+    }
+  },
+  {
+    $addFields: {
+      // Map numeric dayOfWeek to actual day namesa
+      dayOfWeekName: {
+        $switch: {
+          branches: [
+            { case: { $eq: ["$dayOfWeek", 1] }, then: "Sunday" },
+            { case: { $eq: ["$dayOfWeek", 2] }, then: "Monday" },
+            { case: { $eq: ["$dayOfWeek", 3] }, then: "Tuesday" },
+            { case: { $eq: ["$dayOfWeek", 4] }, then: "Wednesday" },
+            { case: { $eq: ["$dayOfWeek", 5] }, then: "Thursday" },
+            { case: { $eq: ["$dayOfWeek", 6] }, then: "Friday" },
+            { case: { $eq: ["$dayOfWeek", 7] }, then: "Saturday" }
+          ],
+          default: "Unknown"
+        }
+      }
+    }
+  },
+  {
+    $group: {
+      _id: "$dayOfWeekName", // Group by the day name
+      totalBookings: { $count: {} }, // Count the total number of bookings for each day
+      spacePriceTotal: { $sum: "$spacePrice" }, // Sum of spacePrice for the day
+      sysFeeTotal: { $sum: "$sysFee" }, // Sum of sysFee for the day
+      totalAmount: { $sum: "$total" } // Sum of total for the day
+    }
+  },
+  {
+    $sort: { "_id": 1 } // Sort by day of the week in ascending order (Monday first, Sunday last)
+  },
+  {
+    $project: {
+      _id: 0, // Exclude _id from the output
+      dayOfWeek: "$_id", // Project dayOfWeek as dayOfWeek
+      totalBookings: 1, // Project totalBookings
+      spacePrice: "$spacePriceTotal", // Project spacePriceTotal as spacePrice
+      sysFee: "$sysFeeTotal", // Project sysFeeTotal as sysFee
+      total: "$totalAmount" // Project totalAmount as total
+    }
+  }
+])

@@ -1,0 +1,640 @@
+[{
+  "id": 1,
+  "customer": {
+    "name": "Natalie Carter",
+    "id": 14,
+    "createdAt": {
+      "$date": "2021-03-19T14:45:00.000Z"
+    },
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648ca8"
+    }
+  },
+  "space": {
+    "id": 1,
+    "name": "Space A",
+    "location": "Downtown",
+    "hourlyRate": 10,
+    "halfdayRate": 100,
+    "fulldayRate": 180,
+    "rating": 4.5,
+    "address": "1234 Main St",
+    "spaceid": {
+      "$oid": "67bc9e44a88c21f2dc648c9a"
+    }
+  },
+  "bookingDate": "2025-01-10",
+  "startFrom": {
+    "$date": "2025-01-02T10:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2025-01-02T12:00:00.000Z"
+  },
+  "spacePrice": 20,
+  "sysFee": 0.6,
+  "total": 20.6,
+  "status": "booked",
+  "createdAt": {
+    "$date": "2024-01-01T01:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-27T06:26:50.778Z"
+  },
+  "payment": {
+    "id": 1,
+    "amountToPay": 20.6,
+    "paid": 20.6,
+    "unpaid": 0,
+    "status": "paid",
+    "transacId": "1234567890",
+    "bank": "Chase",
+    "createdAt": {
+      "$date": "2025-01-01T01:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-01T01:00:00.000Z"
+    }
+  }
+},
+{
+  "id": 2,
+  "customer": {
+    "id": 19,
+    "name": "Samuel Baker",
+    "createdAt": {
+      "$date": "2019-02-10T10:20:00.000Z"
+    },
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cad"
+    }
+  },
+  "space": {
+    "id": 19,
+    "name": "Space S",
+    "location": "Midtown",
+    "hourlyRate": 16,
+    "halfdayRate": 140,
+    "fulldayRate": 260,
+    "rating": 4.8,
+    "address": "7890 Oak St",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c98"
+    }
+  },
+  "bookingDate": "2025-02-10",
+  "startFrom": {
+    "$date": "2025-02-10T14:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2025-02-10T17:00:00.000Z"
+  },
+  "spacePrice": 48,
+  "sysFee": 1.44,
+  "total": 49.44,
+  "status": "booked",
+  "createdAt": {
+    "$date": "2025-02-09T12:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-09T12:30:00.000Z"
+  },
+  "payment": {
+    "id": 2,
+    "amountToPay": 49.44,
+    "paid": 49.44,
+    "unpaid": 0,
+    "status": "paid",
+    "transacId": "0987654321",
+    "bank": "Wells Fargo",
+    "createdAt": {
+      "$date": "2025-02-09T12:30:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-02-09T12:30:00.000Z"
+    }
+  }
+},
+{
+  "id": 5,
+  "customer": {
+    "id": 17,
+    "name": "Quinn Hall",
+    "createdAt": {
+      "$date": "2020-06-14T09:00:00.000Z"
+    },
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cab"
+    }
+  },
+  "space": {
+    "id": 19,
+    "name": "Space S",
+    "location": "Midtown",
+    "hourlyRate": 16,
+    "halfdayRate": 140,
+    "fulldayRate": 260,
+    "rating": 4.8,
+    "address": "7890 Oak St",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c98"
+    }
+  },
+  "bookingDate": "2024-05-20",
+  "startFrom": {
+    "$date": "2024-05-20T10:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-05-20T18:00:00.000Z"
+  },
+  "spacePrice": 140,
+  "sysFee": 4.2,
+  "total": 144.2,
+  "status": "booked",
+  "createdAt": {
+    "$date": "2024-05-19T16:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-19T16:45:00.000Z"
+  },
+  "payment": {
+    "id": 5,
+    "amountToPay": 144.2,
+    "paid": 144.2,
+    "unpaid": 0,
+    "status": "paid",
+    "transacId": "6789012345",
+    "bank": "CitiBank",
+    "createdAt": {
+      "$date": "2025-05-19T16:45:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-19T16:45:00.000Z"
+    }
+  }
+},
+{
+  "id": 4,
+  "customer": {
+    "id": 20,
+    "name": "Taylor Evans",
+    "createdAt": {
+      "$date": "2017-12-30T14:00:00.000Z"
+    },
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cae"
+    }
+  },
+  "space": {
+    "id": 1,
+    "name": "Space A",
+    "location": "Downtown",
+    "hourlyRate": 10,
+    "halfdayRate": 100,
+    "fulldayRate": 180,
+    "rating": 4.5,
+    "address": "1234 Main St",
+    "spaceid": {
+      "$oid": "67bc9e44a88c21f2dc648c9a"
+    }
+  },
+  "bookingDate": "2025-04-05",
+  "startFrom": {
+    "$date": "2024-04-05T13:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-04-05T17:00:00.000Z"
+  },
+  "spacePrice": 40,
+  "sysFee": 1.2,
+  "total": 41.2,
+  "status": "cancelled",
+  "createdAt": {
+    "$date": "2024-04-04T08:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-04T08:15:00.000Z"
+  },
+  "payment": {
+    "id": 4,
+    "amountToPay": 41.2,
+    "paid": 0,
+    "unpaid": 41.2,
+    "status": "unpaid",
+    "transacId": null,
+    "bank": null,
+    "createdAt": {
+      "$date": "2025-04-04T08:15:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-04-04T08:15:00.000Z"
+    }
+  }
+},
+{
+  "id": 3,
+  "customer": {
+    "id": 18,
+    "name": "Rachel White",
+    "createdAt": {
+      "$date": "2018-08-22T13:40:00.000Z"
+    },
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cac"
+    }
+  },
+  "space": {
+    "id": 20,
+    "name": "Space T",
+    "location": "Downtown",
+    "hourlyRate": 13,
+    "halfdayRate": 120,
+    "fulldayRate": 230,
+    "rating": 4.6,
+    "address": "3456 Oak St",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c99"
+    }
+  },
+  "bookingDate": "2024-03-15",
+  "startFrom": {
+    "$date": "2024-03-15T09:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-03-15T12:00:00.000Z"
+  },
+  "spacePrice": 39,
+  "sysFee": 1.17,
+  "total": 40,
+  "status": "booked",
+  "createdAt": {
+    "$date": "2024-03-14T10:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-14T10:00:00.000Z"
+  },
+  "payment": {
+    "id": 3,
+    "amountToPay": 40,
+    "paid": 20,
+    "unpaid": 20,
+    "status": "pending",
+    "transacId": "2345678901",
+    "bank": "Bank of America",
+    "createdAt": {
+      "$date": "2025-03-14T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-14T10:00:00.000Z"
+    }
+  }
+},
+{
+  "id": 6,
+  "customer": {
+    "id": 19,
+    "name": "Samuel Baker",
+    "createdAt": {
+      "$date": "2019-02-10T10:20:00.000Z"
+    },
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cad"
+    }
+  },
+  "space": {
+    "id": 20,
+    "name": "Space T",
+    "location": "Downtown",
+    "hourlyRate": 13,
+    "halfdayRate": 120,
+    "fulldayRate": 230,
+    "rating": 4.6,
+    "address": "3456 Oak St",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c99"
+    }
+  },
+  "bookingDate": "2024-06-10",
+  "startFrom": {
+    "$date": "2024-06-10T08:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-10T19:00:00.000Z"
+  },
+  "spacePrice": 230,
+  "sysFee": 6.9,
+  "total": 236.9,
+  "status": "booked",
+  "createdAt": {
+    "$date": "2024-06-09T11:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-09T11:30:00.000Z"
+  },
+  "payment": {
+    "id": 6,
+    "amountToPay": 236.9,
+    "paid": 236.9,
+    "unpaid": 0,
+    "status": "paid",
+    "transacId": "7890123456",
+    "bank": "HSBC",
+    "createdAt": {
+      "$date": "2025-06-09T11:30:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-09T11:30:00.000Z"
+    }
+  }
+},
+{
+  "id": 9,
+  "customer": {
+    "id": 18,
+    "name": "Rachel White",
+    "createdAt": {
+      "$date": "2018-08-22T13:40:00.000Z"
+    },
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cac"
+    }
+  },
+  "space": {
+    "id": 19,
+    "name": "Space S",
+    "location": "Midtown",
+    "hourlyRate": 16,
+    "halfdayRate": 140,
+    "fulldayRate": 260,
+    "rating": 4.8,
+    "address": "7890 Oak St",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c98"
+    }
+  },
+  "bookingDate": "2024-09-20",
+  "startFrom": {
+    "$date": "2024-09-20T08:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-09-20T18:00:00.000Z"
+  },
+  "spacePrice": 260,
+  "sysFee": 7.8,
+  "total": 267.8,
+  "status": "cancelled",
+  "createdAt": {
+    "$date": "2024-09-19T15:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-19T15:00:00.000Z"
+  },
+  "payment": {
+    "id": 9,
+    "amountToPay": 267.8,
+    "paid": 267.8,
+    "unpaid": 0,
+    "status": "refunded",
+    "transacId": null,
+    "bank": null,
+    "createdAt": {
+      "$date": "2025-09-19T15:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-19T15:00:00.000Z"
+    }
+  }
+},
+{
+  "id": 10,
+  "customer": {
+    "id": 20,
+    "name": "Taylor Evans",
+    "createdAt": {
+      "$date": "2017-12-30T14:00:00.000Z"
+    },
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cae"
+    }
+  },
+  "space": {
+    "id": 18,
+    "name": "Space R",
+    "location": "Uptown",
+    "hourlyRate": 12,
+    "halfdayRate": 110,
+    "fulldayRate": 200,
+    "rating": 4.7,
+    "address": "5678 Birch St",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c97"
+    }
+  },
+  "bookingDate": "2024-10-10",
+  "startFrom": {
+    "$date": "2024-10-10T13:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-10-10T17:00:00.000Z"
+  },
+  "spacePrice": 48,
+  "sysFee": 1.44,
+  "total": 49.44,
+  "status": "cancelled",
+  "createdAt": {
+    "$date": "2024-10-09T10:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-09T10:00:00.000Z"
+  },
+  "payment": {
+    "id": 10,
+    "amountToPay": 49.44,
+    "paid": 0,
+    "unpaid": 49.44,
+    "status": "unpaid",
+    "transacId": null,
+    "bank": null,
+    "createdAt": {
+      "$date": "2025-10-09T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-09T10:00:00.000Z"
+    }
+  }
+},
+{
+  "id": 7,
+  "customer": {
+    "id": 17,
+    "name": "Quinn Hall",
+    "createdAt": {
+      "$date": "2020-06-14T09:00:00.000Z"
+    },
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cab"
+    }
+  },
+  "space": {
+    "id": 18,
+    "name": "Space R",
+    "location": "Uptown",
+    "hourlyRate": 12,
+    "halfdayRate": 110,
+    "fulldayRate": 200,
+    "rating": 4.7,
+    "address": "5678 Birch St",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c97"
+    }
+  },
+  "bookingDate": "2024-07-05",
+  "startFrom": {
+    "$date": "2024-07-05T14:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T18:00:00.000Z"
+  },
+  "spacePrice": 48,
+  "sysFee": 1.44,
+  "total": 49.44,
+  "status": "cancelled",
+  "createdAt": {
+    "$date": "2024-07-04T09:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-04T09:15:00.000Z"
+  },
+  "payment": {
+    "id": 7,
+    "amountToPay": 49.44,
+    "paid": {
+      "$numberDecimal": "49.44"
+    },
+    "unpaid": 0,
+    "status": "refunded",
+    "transacId": null,
+    "bank": null,
+    "createdAt": {
+      "$date": "2025-07-04T09:15:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-07-04T09:15:00.000Z"
+    }
+  }
+},
+{
+  "id": 8,
+  "customer": {
+    "id": 19,
+    "name": "Samuel Baker",
+    "createdAt": {
+      "$date": "2019-02-10T10:20:00.000Z"
+    },
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cad"
+    }
+  },
+  "space": {
+    "id": 17,
+    "name": "Space Q",
+    "location": "Midtown",
+    "hourlyRate": 15,
+    "halfdayRate": 130,
+    "fulldayRate": 250,
+    "rating": 4.5,
+    "address": "6789 Cedar St",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c96"
+    }
+  },
+  "bookingDate": "2024-08-12",
+  "startFrom": {
+    "$date": "2024-08-12T09:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-08-12T17:00:00.000Z"
+  },
+  "spacePrice": 130,
+  "sysFee": 3.9,
+  "total": 133.9,
+  "status": "booked",
+  "createdAt": {
+    "$date": "2024-08-11T12:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-11T12:30:00.000Z"
+  },
+  "payment": {
+    "id": 8,
+    "amountToPay": 133.9,
+    "paid": 133.9,
+    "unpaid": 0,
+    "status": "paid",
+    "transacId": "8901234567",
+    "bank": "Wells Fargo",
+    "createdAt": {
+      "$date": "2025-08-11T12:30:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-11T12:30:00.000Z"
+    }
+  }
+},
+{
+  "id": 9,
+  "customer": {
+    "id": 8,
+    "name": "Samuel Baker",
+    "createdAt": {
+      "$date": "2019-08-14T15:00:00.000Z"
+    },
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648ca2"
+    }
+  },
+  "space": {
+    "id": 19,
+    "name": "Space S",
+    "location": "Midtown",
+    "hourlyRate": 16,
+    "halfdayRate": 140,
+    "fulldayRate": 260,
+    "rating": 4.8,
+    "address": "7890 Oak St",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c98"
+    }
+  },
+  "bookingDate": "2024-09-20",
+  "startFrom": {
+    "$date": "2024-09-20T09:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-09-20T17:00:00.000Z"
+  },
+  "spacePrice": 140,
+  "sysFee": 4.2,
+  "total": 144.2,
+  "status": "booked",
+  "createdAt": {
+    "$date": "2024-09-19T10:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-19T10:00:00.000Z"
+  },
+  "payment": {
+    "id": 9,
+    "amountToPay": 144.2,
+    "paid": 144.2,
+    "unpaid": 0,
+    "status": "paid",
+    "transacId": "9012345678",
+    "bank": "Bank of America",
+    "createdAt": {
+      "$date": "2025-09-19T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-19T10:00:00.000Z"
+    }
+  }
+}]

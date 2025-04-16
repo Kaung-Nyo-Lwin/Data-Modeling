@@ -1,0 +1,340 @@
+[{
+  "id": 18,
+  "name": "Rachel White",
+  "email": "rachel.white@example.com",
+  "phone": "2345678901",
+  "address": "7890 Chestnut St",
+  "preferedRange": "6 - 11",
+  "isCustomer": false,
+  "isOwner": true,
+  "rating": 4.7,
+  "createdAt": {
+    "$date": "2018-08-22T13:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-05T15:55:00.000Z"
+  }
+},
+{
+  "id": 20,
+  "name": "Taylor Evans",
+  "email": "taylor.evans@example.com",
+  "phone": "4567890123",
+  "address": "9012 Fir St",
+  "preferedRange": "7 - 14",
+  "isCustomer": false,
+  "isOwner": true,
+  "rating": 4.6,
+  "createdAt": {
+    "$date": "2017-12-30T14:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-09-10T19:40:00.000Z"
+  }
+},
+{
+  "id": 7,
+  "name": "George Miller",
+  "email": "george.miller@example.com",
+  "phone": "9012345678",
+  "address": "5678 Oak St",
+  "preferedRange": "9 - 13",
+  "isCustomer": true,
+  "isOwner": false,
+  "rating": 4.1,
+  "createdAt": {
+    "$date": "2020-05-30T07:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2021-09-01T21:30:00.000Z"
+  }
+},
+{
+  "id": 10,
+  "name": "Jessica Lewis",
+  "email": "jessica.lewis@example.com",
+  "phone": "3456789012",
+  "address": "5678 Pine St",
+  "preferedRange": "5 - 10",
+  "isCustomer": false,
+  "isOwner": true,
+  "rating": 4.8,
+  "createdAt": {
+    "$date": "2022-01-22T08:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-06-15T14:50:00.000Z"
+  }
+},
+{
+  "id": 1,
+  "name": "Alice Johnson",
+  "email": "alice.johnson@example.com",
+  "phone": "9876543210",
+  "address": "5678 Oak St",
+  "preferedRange": "5 - 10",
+  "isCustomer": true,
+  "isOwner": false,
+  "rating": 4.2,
+  "createdAt": {
+    "$date": "2021-02-15T10:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-10T14:20:00.000Z"
+  }
+},
+{
+  "id": 8,
+  "name": "Hannah Scott",
+  "email": "hannah.scott@example.com",
+  "phone": "1238904567",
+  "address": "2345 Walnut St",
+  "preferedRange": "11 - 16",
+  "isCustomer": false,
+  "isOwner": true,
+  "rating": 4.6,
+  "createdAt": {
+    "$date": "2019-08-14T15:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-23T18:10:00.000Z"
+  }
+},
+{
+  "id": 13,
+  "name": "Michael Foster",
+  "email": "michael.foster@example.com",
+  "phone": "6789012345",
+  "address": "6789 Elm St",
+  "preferedRange": "10 - 20",
+  "isCustomer": true,
+  "isOwner": false,
+  "rating": 4.1,
+  "createdAt": {
+    "$date": "2019-07-14T08:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2021-11-30T11:50:00.000Z"
+  }
+},
+{
+  "id": 15,
+  "name": "Oliver Hughes",
+  "email": "oliver.hughes@example.com",
+  "phone": "8901234567",
+  "address": "4567 Redwood St",
+  "preferedRange": "12 - 18",
+  "isCustomer": false,
+  "isOwner": true,
+  "rating": 4.8,
+  "createdAt": {
+    "$date": "2017-11-05T11:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-04-30T20:50:00.000Z"
+  }
+},
+{
+  "id": 16,
+  "name": "Patrick Reed",
+  "email": "patrick.reed@example.com",
+  "phone": "9012345678",
+  "address": "5678 Cypress St",
+  "preferedRange": "9 - 13",
+  "isCustomer": true,
+  "isOwner": false,
+  "rating": 4.2,
+  "createdAt": {
+    "$date": "2019-05-25T07:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-20T16:15:00.000Z"
+  }
+},
+{
+  "id": 12,
+  "name": "Laura Bennett",
+  "email": "laura.bennett@example.com",
+  "phone": "5678901234",
+  "address": "2345 Cedar St",
+  "preferedRange": "7 - 14",
+  "isCustomer": false,
+  "isOwner": true,
+  "rating": 4.9,
+  "createdAt": {
+    "$date": "2018-12-22T09:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-07-01T16:25:00.000Z"
+  }
+},
+{
+  "id": 2,
+  "name": "Bob Smith",
+  "email": "bob.smith@example.com",
+  "phone": "9123456780",
+  "address": "9012 Pine St",
+  "preferedRange": "8 - 12",
+  "isCustomer": true,
+  "isOwner": false,
+  "rating": 3.8,
+  "createdAt": {
+    "$date": "2020-07-20T09:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2021-01-25T18:45:00.000Z"
+  }
+},
+{
+  "id": 14,
+  "name": "Natalie Carter",
+  "email": "natalie.carter@example.com",
+  "phone": "7890123456",
+  "address": "3456 Spruce St",
+  "preferedRange": "5 - 10",
+  "isCustomer": true,
+  "isOwner": false,
+  "rating": 3.7,
+  "createdAt": {
+    "$date": "2021-03-19T14:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-08-10T09:35:00.000Z"
+  }
+},
+{
+  "id": 4,
+  "name": "Diana Green",
+  "email": "diana.green@example.com",
+  "phone": "7654321890",
+  "address": "6789 Birch St",
+  "preferedRange": "12 - 18",
+  "isCustomer": true,
+  "isOwner": false,
+  "rating": 3.5,
+  "createdAt": {
+    "$date": "2021-09-10T11:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-28T16:40:00.000Z"
+  }
+},
+{
+  "id": 5,
+  "name": "Ethan Wright",
+  "email": "ethan_wright@example.com",
+  "phone": "5612357896",
+  "address": "7890 Cedar St",
+  "preferedRange": "5 - 10",
+  "isCustomer": false,
+  "isOwner": true,
+  "rating": 4.7,
+  "createdAt": {
+    "$date": "2018-06-25T14:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T16:40:29.324Z"
+  }
+},
+{
+  "id": 6,
+  "name": "Fiona Adams",
+  "email": "fiona.adams@example.com",
+  "phone": "8901234567",
+  "address": "1234 Elm St",
+  "preferedRange": "6 - 11",
+  "isCustomer": true,
+  "isOwner": false,
+  "rating": 3.9,
+  "createdAt": {
+    "$date": "2022-04-05T13:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-08-19T17:55:00.000Z"
+  }
+},
+{
+  "id": 9,
+  "name": "Isaac Turner",
+  "email": "isaac.turner@example.com",
+  "phone": "2345678901",
+  "address": "8901 Maple St",
+  "preferedRange": "10 - 15",
+  "isCustomer": true,
+  "isOwner": false,
+  "rating": 4.3,
+  "createdAt": {
+    "$date": "2017-03-11T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T12:05:00.000Z"
+  }
+},
+{
+  "id": 3,
+  "name": "Charlie Brown",
+  "email": "charlie.brown@example.com",
+  "phone": "8345672190",
+  "address": "3456 Maple St",
+  "preferedRange": "10 - 20",
+  "isCustomer": false,
+  "isOwner": true,
+  "rating": 4.9,
+  "createdAt": {
+    "$date": "2019-12-05T08:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-03-14T12:30:00.000Z"
+  }
+},
+{
+  "id": 11,
+  "name": "Kevin Rogers",
+  "email": "kevin.rogers@example.com",
+  "phone": "4567890123",
+  "address": "1234 Birch St",
+  "preferedRange": "6 - 12",
+  "isCustomer": true,
+  "isOwner": false,
+  "rating": 4.4,
+  "createdAt": {
+    "$date": "2020-10-10T12:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-15T15:45:00.000Z"
+  }
+},
+{
+  "id": 17,
+  "name": "Quinn Hall",
+  "email": "quinn.hall@example.com",
+  "phone": "1234567890",
+  "address": "6789 Ash St",
+  "preferedRange": "10 - 15",
+  "isCustomer": true,
+  "isOwner": false,
+  "rating": 4.5,
+  "createdAt": {
+    "$date": "2020-06-14T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-15T12:20:00.000Z"
+  }
+},
+{
+  "id": 19,
+  "name": "Samuel Baker",
+  "email": "samuel.baker@example.com",
+  "phone": "3456789012",
+  "address": "8901 Dogwood St",
+  "preferedRange": "11 - 16",
+  "isCustomer": true,
+  "isOwner": false,
+  "rating": 3.9,
+  "createdAt": {
+    "$date": "2019-02-10T10:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-06-25T18:30:00.000Z"
+  }
+}]

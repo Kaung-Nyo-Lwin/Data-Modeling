@@ -1,0 +1,42 @@
+db.booking.aggregate([
+  {
+    $match: {
+      // Filter documents within the given date range (start date to end date)
+      endAt: {
+        $gte: ISODate("2023-01-20T17:00:00.000Z"), // Replace <Start Date> with your start date (e.g., "2025-01-01T00:00:00Z")
+        $lte: ISODate("2025-12-20T17:00:00.000Z")    // Replace <End Date> with your end date (e.g., "2025-12-31T23:59:59Z")
+      }
+    }
+  },
+  {
+    $project: {
+      // Extract month and year from bookingDate for grouping
+      month: { $month: "$endAt" },
+      year: { $year: "$endAt" },
+      spacePrice: 1,
+      sysFee: 1,
+      total: 1
+    }
+  },
+  {
+    $group: {
+      _id: { month: "$month", year: "$year" }, // Group by year and month
+      spacePriceTotal: { $sum: "$spacePrice" }, // Sum of spacePrice for the month
+      sysFeeTotal: { $sum: "$sysFee" },         // Sum of sysFee for the month
+      totalAmount: { $sum: "$total" }           // Sum of total for the month
+    }
+  },
+  {
+    $sort: { "_id.year": 1, "_id.month": 1 }  // Sort by year and month in ascending order
+  },
+  {
+    $project: {
+      _id: 0, // Exclude _id from the output
+      year: "$_id.year",   // Project year
+      month: "$_id.month", // Project month
+      spacePrice: "$spacePriceTotal", // Project spacePriceTotal as spacePrice
+      sysFee: "$sysFeeTotal",         // Project sysFeeTotal as sysFee
+      total: "$totalAmount"           // Project totalAmount as total
+    }
+  }
+])

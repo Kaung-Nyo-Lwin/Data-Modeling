@@ -1,0 +1,13 @@
+db.user.insertOne({
+  id: 21,
+  name: "John Doe",
+  email: "johndoe1@gmail.com",
+  phone: "1234567890",
+  address: "1234 Main St",
+  preferredRange: "10 - 15",
+  isCustomer: true,
+  isOwner: false,
+  rating: 4.5,
+  createdAt: ISODate("2020-01-01T00:00:00Z"),
+  updatedAt: ISODate("2020-01-01T00:00:00Z")
+});

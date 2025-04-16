@@ -1,0 +1,106 @@
+Steps:
+1. use db.space.aggregate
+2. left join with booking to get the number of bookings by input user id
+3. left join with booking et the total booking hours between startTime and endTime
+4. filter out if booked hours is greater than or equal search hours (endTime - startTime)
+5. filter with input location
+5. Order by number of bookings and space.rating
+6. show first ten docs
+
+
+Output:
+
+1. Space Name
+2. hourly Rate
+3. halfday Rate
+4. fullday Rate
+5. rating
+
+db.space.aggregate([
+  // Step 1: Left join with booking to get the number of bookings by input user id
+  {
+    $lookup: {
+      from: "booking",
+      let: { spaceId: "$id" },
+      pipeline: [
+        { $match: { "customer.id": 20 } }, // Replace with input user ID
+        { $match: { $expr: { $eq: ["$space.id", "$$spaceId"] } } },
+        { $group: { _id: "$space.id", numBookings: { $sum: 1 } } }
+      ],
+      as: "userBookings"
+    }
+  },
+
+  // Step 2: Left join with booking to get total booking hours in search period
+  {
+    $lookup: {
+      from: "booking",
+      let: { spaceId: "$id" },
+      pipeline: [
+        {
+          $match: {
+            startFrom: { $gte: ISODate("2025-01-01T10:00:00Z") }, // Replace with input startTime
+            endAt: { $lte: ISODate("2025-01-01T12:00:00Z") }, // Replace with input endTime
+          }
+        },
+        { $match: { $expr: { $eq: ["$space.id", "$$spaceId"] } } },
+        {
+          $group: {
+            _id: "$space.id",
+            totalBookedHours: {
+              $sum: { $divide: [{ $subtract: ["$endAt", "$startFrom"] }, 3600000] } // Convert ms to hours
+            }
+          }
+        }
+      ],
+      as: "bookingHours"
+    }
+  },
+
+  // Step 3: Unwind lookup results
+  {
+    $addFields: {
+      numBookings: { $ifNull: [{ $arrayElemAt: ["$userBookings.numBookings", 0] }, 0] },
+      totalBookedHours: { $ifNull: [{ $arrayElemAt: ["$bookingHours.totalBookedHours", 0] }, 0] }
+    }
+  },
+
+  // Step 4: Filter out fully booked spaces
+  {
+    $match: {
+      $expr: {
+        $lt: [
+          "$totalBookedHours",
+          { $divide: [{ $subtract: [ISODate("2025-01-01T12:00:00Z"), 
+				ISODate("2025-01-01T10:00:00Z")] }, 3600000] } // Search hours
+        ]
+      }
+    }
+  },
+
+  // Step 5: Filter by location
+  {
+    $match: { location: "Uptown" } // Replace with input location
+  },
+
+  // Step 6: Project required fields
+  {
+    $project: {
+      _id: 0,
+      spaceName: "$name",
+      hourlyRate: 1,
+      halfdayRate: 1,
+      fulldayRate: 1,
+      rating: 1,
+      numBookings: 1
+    }
+  },
+
+  // Step 7: Sort by number of bookings and rating
+  {
+    $sort: { numBookings: -1, rating: -1 }
+  },
+
+  // Step 8: Limit to first 10 documents
+  { $limit: 10 }
+]);

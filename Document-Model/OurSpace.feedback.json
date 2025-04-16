@@ -1,0 +1,382 @@
+[{
+  "id": 11,
+  "customer": {
+    "id": 11,
+    "name": "Kevin Rogers",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648ca5"
+    }
+  },
+  "space": {
+    "id": 11,
+    "name": "Space K",
+    "location": "Downtown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c90"
+    }
+  },
+  "review": "Very spacious, perfect for conferences.",
+  "rating": 4.9,
+  "createdAt": "2021-05-03 00:00:00"
+},
+{
+  "id": 20,
+  "customer": {
+    "id": 20,
+    "name": "Taylor Evans",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cae"
+    }
+  },
+  "space": {
+    "id": 20,
+    "name": "Space T",
+    "location": "Downtown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c99"
+    }
+  },
+  "review": "Superb place for presentations!",
+  "rating": 4.2,
+  "createdAt": "2021-07-05 00:00:00",
+  "updatedAt": {
+    "$date": "2025-02-26T16:26:06.486Z"
+  }
+},
+{
+  "id": 13,
+  "customer": {
+    "id": 13,
+    "name": "Michael Foster",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648ca7"
+    }
+  },
+  "space": {
+    "id": 13,
+    "name": "Space M",
+    "location": "Midtown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c92"
+    }
+  },
+  "review": "Modern design, great lighting.",
+  "rating": 4.6,
+  "createdAt": "2023-02-05 00:00:00"
+},
+{
+  "id": 15,
+  "customer": {
+    "id": 15,
+    "name": "Oliver Hughes",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648ca9"
+    }
+  },
+  "space": {
+    "id": 15,
+    "name": "Space O",
+    "location": "Midtown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c94"
+    }
+  },
+  "review": "Well maintained, and good for brainstorming.",
+  "rating": 4.5,
+  "createdAt": "2022-03-10 00:00:00"
+},
+{
+  "id": 18,
+  "customer": {
+    "id": 18,
+    "name": "Rachel White",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cac"
+    }
+  },
+  "space": {
+    "id": 18,
+    "name": "Space R",
+    "location": "Uptown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c97"
+    }
+  },
+  "review": "Excellent facilities and good service.",
+  "rating": 4.8,
+  "createdAt": "2022-12-01 00:00:00"
+},
+{
+  "id": 8,
+  "customer": {
+    "id": 6,
+    "name": "Fiona Adams",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648ca0"
+    }
+  },
+  "space": {
+    "id": 8,
+    "name": "Space H",
+    "location": "Suburbs",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c8d"
+    }
+  },
+  "review": "A bit far from the city center, but worth it.",
+  "rating": 4,
+  "createdAt": "2022-04-30 00:00:00"
+},
+{
+  "id": 9,
+  "customer": {
+    "id": 9,
+    "name": "Isaac Turner",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648ca3"
+    }
+  },
+  "space": {
+    "id": 9,
+    "name": "Space I",
+    "location": "Downtown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c8e"
+    }
+  },
+  "review": "Nice and clean, but could use a bigger space.",
+  "rating": 3.8,
+  "createdAt": "2020-08-20 00:00:00"
+},
+{
+  "id": 10,
+  "customer": {
+    "id": 10,
+    "name": "Jessica Lewis",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648ca4"
+    }
+  },
+  "space": {
+    "id": 10,
+    "name": "Space J",
+    "location": "Midtown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c8f"
+    }
+  },
+  "review": "Good amenities and central location.",
+  "rating": 4.4,
+  "createdAt": "2023-01-14 00:00:00"
+},
+{
+  "id": 12,
+  "customer": {
+    "id": 4,
+    "name": "Diana Green",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648c9e"
+    }
+  },
+  "space": {
+    "id": 12,
+    "name": "Space L",
+    "location": "Suburbs",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c91"
+    }
+  },
+  "review": "Quiet and peaceful environment.",
+  "rating": 4.1,
+  "createdAt": "2022-09-12 00:00:00"
+},
+{
+  "id": 3,
+  "customer": {
+    "id": 7,
+    "name": "George Miller",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648ca1"
+    }
+  },
+  "space": {
+    "id": 3,
+    "name": "Space C",
+    "location": "Midtown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c88"
+    }
+  },
+  "review": "A very comfortable and quiet place.",
+  "rating": 4.7,
+  "createdAt": "2022-07-01 00:00:00"
+},
+{
+  "id": 5,
+  "customer": {
+    "id": 2,
+    "name": "Bob Smith",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648c9c"
+    }
+  },
+  "space": {
+    "id": 5,
+    "name": "Space E",
+    "location": "Downtown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c8a"
+    }
+  },
+  "review": "Very convenient and well-equipped space.",
+  "rating": 4.3,
+  "createdAt": "2020-05-17 00:00:00"
+},
+{
+  "id": 19,
+  "customer": {
+    "id": 19,
+    "name": "Samuel Baker",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cad"
+    }
+  },
+  "space": {
+    "id": 19,
+    "name": "Space S",
+    "location": "Midtown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c98"
+    }
+  },
+  "review": "Amazing space with beautiful views.",
+  "rating": 4.7,
+  "createdAt": "2023-03-17 00:00:00"
+},
+{
+  "id": 7,
+  "customer": {
+    "id": 1,
+    "name": "Alice Johnson",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648c9b"
+    }
+  },
+  "space": {
+    "id": 7,
+    "name": "Space G",
+    "location": "Downtown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c8c"
+    }
+  },
+  "review": "Great location and facilities.",
+  "rating": 4.8,
+  "createdAt": "2021-09-25 00:00:00"
+},
+{
+  "id": 14,
+  "customer": {
+    "id": 14,
+    "name": "Natalie Carter",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648ca8"
+    }
+  },
+  "space": {
+    "id": 14,
+    "name": "Space N",
+    "location": "Uptown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c93"
+    }
+  },
+  "review": "Perfect for smaller gatherings.",
+  "rating": 4.3,
+  "createdAt": "2021-06-18 00:00:00"
+},
+{
+  "id": 16,
+  "customer": {
+    "id": 16,
+    "name": "Patrick Reed",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648caa"
+    }
+  },
+  "space": {
+    "id": 16,
+    "name": "Space P",
+    "location": "Downtown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c95"
+    }
+  },
+  "review": "Nice location but noisy in the evenings.",
+  "rating": 3.9,
+  "createdAt": "2020-06-22 00:00:00"
+},
+{
+  "id": 17,
+  "customer": {
+    "id": 17,
+    "name": "Quinn Hall",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cab"
+    }
+  },
+  "space": {
+    "id": 17,
+    "name": "Space Q",
+    "location": "Suburbs",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c96"
+    }
+  },
+  "review": "A great getaway from the city.",
+  "rating": 4.4,
+  "createdAt": "2021-10-14 00:00:00"
+},
+{
+  "id": 6,
+  "customer": {
+    "id": 8,
+    "name": "Hannah Scott",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648ca2"
+    }
+  },
+  "space": {
+    "id": 6,
+    "name": "Space F",
+    "location": "Uptown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c8b"
+    }
+  },
+  "review": "Ideal for small team meetings.",
+  "rating": 4.6,
+  "createdAt": "2022-01-10 00:00:00"
+},
+{
+  "customer": {
+    "id": 20,
+    "name": "Taylor Evans",
+    "userid": {
+      "$oid": "67bca321a88c21f2dc648cae"
+    }
+  },
+  "space": {
+    "id": 20,
+    "name": "Space N",
+    "location": "Downtown",
+    "spaceid": {
+      "$oid": "67bc9ce8a88c21f2dc648c99"
+    }
+  },
+  "review": "Bad",
+  "rating": 2.5,
+  "createdAt": {
+    "$date": "2021-07-04T17:00:00.000Z"
+  }
+}]

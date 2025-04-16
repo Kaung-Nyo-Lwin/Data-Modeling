@@ -1,0 +1,2462 @@
+
+db.user.insertMany(
+[{
+    "id": 18,
+    "name": "Rachel White",
+    "email": "rachel.white@example.com",
+    "phone": "2345678901",
+    "address": "7890 Chestnut St",
+    "preferedRange": "6 - 11",
+    "isCustomer": false,
+    "isOwner": true,
+    "rating": 4.7,
+    "createdAt": {
+      "date": "2018-08-22T13:40:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2021-12-05T15:55:00.000Z"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Taylor Evans",
+    "email": "taylor.evans@example.com",
+    "phone": "4567890123",
+    "address": "9012 Fir St",
+    "preferedRange": "7 - 14",
+    "isCustomer": false,
+    "isOwner": true,
+    "rating": 4.6,
+    "createdAt": {
+      "date": "2017-12-30T14:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-09-10T19:40:00.000Z"
+    }
+  },
+  {
+    "id": 7,
+    "name": "George Miller",
+    "email": "george.miller@example.com",
+    "phone": "9012345678",
+    "address": "5678 Oak St",
+    "preferedRange": "9 - 13",
+    "isCustomer": true,
+    "isOwner": false,
+    "rating": 4.1,
+    "createdAt": {
+      "date": "2020-05-30T07:45:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2021-09-01T21:30:00.000Z"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Jessica Lewis",
+    "email": "jessica.lewis@example.com",
+    "phone": "3456789012",
+    "address": "5678 Pine St",
+    "preferedRange": "5 - 10",
+    "isCustomer": false,
+    "isOwner": true,
+    "rating": 4.8,
+    "createdAt": {
+      "date": "2022-01-22T08:40:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-06-15T14:50:00.000Z"
+    }
+  },
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "phone": "9876543210",
+    "address": "5678 Oak St",
+    "preferedRange": "5 - 10",
+    "isCustomer": true,
+    "isOwner": false,
+    "rating": 4.2,
+    "createdAt": {
+      "date": "2021-02-15T10:30:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2021-06-10T14:20:00.000Z"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Hannah Scott",
+    "email": "hannah.scott@example.com",
+    "phone": "1238904567",
+    "address": "2345 Walnut St",
+    "preferedRange": "11 - 16",
+    "isCustomer": false,
+    "isOwner": true,
+    "rating": 4.6,
+    "createdAt": {
+      "date": "2019-08-14T15:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-05-23T18:10:00.000Z"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Michael Foster",
+    "email": "michael.foster@example.com",
+    "phone": "6789012345",
+    "address": "6789 Elm St",
+    "preferedRange": "10 - 20",
+    "isCustomer": true,
+    "isOwner": false,
+    "rating": 4.1,
+    "createdAt": {
+      "date": "2019-07-14T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2021-11-30T11:50:00.000Z"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Oliver Hughes",
+    "email": "oliver.hughes@example.com",
+    "phone": "8901234567",
+    "address": "4567 Redwood St",
+    "preferedRange": "12 - 18",
+    "isCustomer": false,
+    "isOwner": true,
+    "rating": 4.8,
+    "createdAt": {
+      "date": "2017-11-05T11:10:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-04-30T20:50:00.000Z"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Patrick Reed",
+    "email": "patrick.reed@example.com",
+    "phone": "9012345678",
+    "address": "5678 Cypress St",
+    "preferedRange": "9 - 13",
+    "isCustomer": true,
+    "isOwner": false,
+    "rating": 4.2,
+    "createdAt": {
+      "date": "2019-05-25T07:30:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2021-10-20T16:15:00.000Z"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Laura Bennett",
+    "email": "laura.bennett@example.com",
+    "phone": "5678901234",
+    "address": "2345 Cedar St",
+    "preferedRange": "7 - 14",
+    "isCustomer": false,
+    "isOwner": true,
+    "rating": 4.9,
+    "createdAt": {
+      "date": "2018-12-22T09:10:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-07-01T16:25:00.000Z"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "phone": "9123456780",
+    "address": "9012 Pine St",
+    "preferedRange": "8 - 12",
+    "isCustomer": true,
+    "isOwner": false,
+    "rating": 3.8,
+    "createdAt": {
+      "date": "2020-07-20T09:15:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2021-01-25T18:45:00.000Z"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Natalie Carter",
+    "email": "natalie.carter@example.com",
+    "phone": "7890123456",
+    "address": "3456 Spruce St",
+    "preferedRange": "5 - 10",
+    "isCustomer": true,
+    "isOwner": false,
+    "rating": 3.7,
+    "createdAt": {
+      "date": "2021-03-19T14:45:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-08-10T09:35:00.000Z"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Diana Green",
+    "email": "diana.green@example.com",
+    "phone": "7654321890",
+    "address": "6789 Birch St",
+    "preferedRange": "12 - 18",
+    "isCustomer": true,
+    "isOwner": false,
+    "rating": 3.5,
+    "createdAt": {
+      "date": "2021-09-10T11:20:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-02-28T16:40:00.000Z"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Ethan Wright",
+    "email": "ethan_wright@example.com",
+    "phone": "5612357896",
+    "address": "7890 Cedar St",
+    "preferedRange": "5 - 10",
+    "isCustomer": false,
+    "isOwner": true,
+    "rating": 4.7,
+    "createdAt": {
+      "date": "2018-06-25T14:10:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2025-02-26T16:40:29.324Z"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Fiona Adams",
+    "email": "fiona.adams@example.com",
+    "phone": "8901234567",
+    "address": "1234 Elm St",
+    "preferedRange": "6 - 11",
+    "isCustomer": true,
+    "isOwner": false,
+    "rating": 3.9,
+    "createdAt": {
+      "date": "2022-04-05T13:25:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-08-19T17:55:00.000Z"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Isaac Turner",
+    "email": "isaac.turner@example.com",
+    "phone": "2345678901",
+    "address": "8901 Maple St",
+    "preferedRange": "10 - 15",
+    "isCustomer": true,
+    "isOwner": false,
+    "rating": 4.3,
+    "createdAt": {
+      "date": "2017-03-11T06:20:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2021-07-30T12:05:00.000Z"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "email": "charlie.brown@example.com",
+    "phone": "8345672190",
+    "address": "3456 Maple St",
+    "preferedRange": "10 - 20",
+    "isCustomer": false,
+    "isOwner": true,
+    "rating": 4.9,
+    "createdAt": {
+      "date": "2019-12-05T08:50:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-03-14T12:30:00.000Z"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Kevin Rogers",
+    "email": "kevin.rogers@example.com",
+    "phone": "4567890123",
+    "address": "1234 Birch St",
+    "preferedRange": "6 - 12",
+    "isCustomer": true,
+    "isOwner": false,
+    "rating": 4.4,
+    "createdAt": {
+      "date": "2020-10-10T12:30:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2021-03-15T15:45:00.000Z"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Quinn Hall",
+    "email": "quinn.hall@example.com",
+    "phone": "1234567890",
+    "address": "6789 Ash St",
+    "preferedRange": "10 - 15",
+    "isCustomer": true,
+    "isOwner": false,
+    "rating": 4.5,
+    "createdAt": {
+      "date": "2020-06-14T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-01-15T12:20:00.000Z"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Samuel Baker",
+    "email": "samuel.baker@example.com",
+    "phone": "3456789012",
+    "address": "8901 Dogwood St",
+    "preferedRange": "11 - 16",
+    "isCustomer": true,
+    "isOwner": false,
+    "rating": 3.9,
+    "createdAt": {
+      "date": "2019-02-10T10:20:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-06-25T18:30:00.000Z"
+    }
+  }]
+);
+
+db.space.insertMany(
+[{
+    "id": 8,
+    "name": "Space H",
+    "Owner": {
+      "id": 5,
+      "name": "Ethan Wright",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9f"
+      }
+    },
+    "location": "Suburbs",
+    "address": "4567 Cedar Rd",
+    "size": "160",
+    "numRooms": 3,
+    "hourlyRate": 13,
+    "halfdayRate": 115,
+    "fulldayRate": 210,
+    "rating": 4.4,
+    "rentFrom": "07:00:00",
+    "rentTo": "18:00:00",
+    "discount": 0.18,
+    "status": "open",
+    "remark": "Quiet and peaceful space",
+    "createdAt": {
+      "date": "2021-11-15T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2021-11-15T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": false,
+      "chair": 10,
+      "tables": 5,
+      "fan": 2,
+      "toilet": 1,
+      "kitchen": true,
+      "bed": false
+    }
+  },
+  {
+    "id": 10,
+    "name": "Space J",
+    "Owner": {
+      "id": 8,
+      "name": "Hannah Scott",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca2"
+      }
+    },
+    "location": "Midtown",
+    "address": "2345 Birch Rd",
+    "size": "110",
+    "numRooms": 1,
+    "hourlyRate": 7,
+    "halfdayRate": 65,
+    "fulldayRate": 130,
+    "rating": 4,
+    "rentFrom": "08:00:00",
+    "rentTo": "19:00:00",
+    "discount": 0.12,
+    "status": "open",
+    "remark": "Affordable space for meetings",
+    "createdAt": {
+      "date": "2020-09-20T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2020-09-20T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": false,
+      "whiteboard": true,
+      "chair": 5,
+      "tables": 2,
+      "fan": 1,
+      "toilet": 1,
+      "kitchen": false,
+      "bed": false
+    }
+  },
+  {
+    "id": 4,
+    "name": "Space D",
+    "Owner": {
+      "id": 8,
+      "name": "Hannah Scott",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca2"
+      }
+    },
+    "location": "Suburbs",
+    "address": "1234 Maple St",
+    "size": "200",
+    "numRooms": 4,
+    "hourlyRate": 15,
+    "halfdayRate": 130,
+    "fulldayRate": 250,
+    "rating": 4.7,
+    "rentFrom": "09:00:00",
+    "rentTo": "21:00:00",
+    "discount": 0.3,
+    "status": "open",
+    "remark": "Large space ideal for events",
+    "createdAt": {
+      "date": "2023-04-01T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2023-04-01T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": true,
+      "chair": 15,
+      "tables": 8,
+      "fan": 4,
+      "toilet": 3,
+      "kitchen": true,
+      "bed": false
+    }
+  },
+  {
+    "id": 3,
+    "name": "Space C",
+    "Owner": {
+      "id": 5,
+      "name": "Ethan Wright",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9f"
+      }
+    },
+    "location": "Midtown",
+    "address": "9101 Pine Ave",
+    "size": "100",
+    "numRooms": 1,
+    "hourlyRate": 8,
+    "halfdayRate": 70,
+    "fulldayRate": 140,
+    "rating": 4.3,
+    "rentFrom": "07:00:00",
+    "rentTo": "18:00:00",
+    "discount": 0.1,
+    "status": "open",
+    "remark": "Compact and functional space",
+    "createdAt": {
+      "date": "2022-03-15T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-03-15T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": false,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": false,
+      "chair": 6,
+      "tables": 3,
+      "fan": 1,
+      "toilet": 1,
+      "kitchen": false,
+      "bed": false
+    }
+  },
+  {
+    "id": 14,
+    "name": "Space N",
+    "Owner": {
+      "id": 8,
+      "name": "Hannah Scott",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca2"
+      }
+    },
+    "location": "Uptown",
+    "address": "2345 Oak Rd",
+    "size": "140",
+    "numRooms": 3,
+    "hourlyRate": 14,
+    "halfdayRate": 125,
+    "fulldayRate": 230,
+    "rating": 4.8,
+    "rentFrom": "06:00:00",
+    "rentTo": "20:00:00",
+    "discount": 0.5,
+    "status": "open",
+    "remark": "Stylish with lots of space",
+    "createdAt": {
+      "date": "2023-03-12T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2023-03-12T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": false,
+      "chair": 10,
+      "tables": 5,
+      "fan": 2,
+      "toilet": 2,
+      "kitchen": true,
+      "bed": false
+    }
+  },
+  {
+    "id": 9,
+    "name": "Space I",
+    "Owner": {
+      "id": 3,
+      "name": "Charlie Brown",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9d"
+      }
+    },
+    "location": "Downtown",
+    "address": "8765 Oak St",
+    "size": "140",
+    "numRooms": 2,
+    "hourlyRate": 10,
+    "halfdayRate": 95,
+    "fulldayRate": 180,
+    "rating": 4.7,
+    "rentFrom": "06:00:00",
+    "rentTo": "21:00:00",
+    "discount": 0.3,
+    "status": "open",
+    "remark": "Spacious and comfortable",
+    "createdAt": {
+      "date": "2021-06-12T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2021-06-12T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": false,
+      "whiteboard": true,
+      "chair": 9,
+      "tables": 4,
+      "fan": 2,
+      "toilet": 1,
+      "kitchen": true,
+      "bed": false
+    }
+  },
+  {
+    "id": 18,
+    "name": "Space R",
+    "Owner": {
+      "id": 3,
+      "name": "Charlie Brown",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9d"
+      }
+    },
+    "location": "Uptown",
+    "address": "9876 Elm St",
+    "size": "100",
+    "numRooms": 1,
+    "hourlyRate": 7,
+    "halfdayRate": 65,
+    "fulldayRate": 130,
+    "rating": 3.9,
+    "rentFrom": "08:00:00",
+    "rentTo": "18:00:00",
+    "discount": 0.1,
+    "status": "open",
+    "remark": "Affordable and perfect for small meetings",
+    "createdAt": {
+      "date": "2020-07-05T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2020-07-05T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": false,
+      "wifi": true,
+      "projector": false,
+      "whiteboard": true,
+      "chair": 4,
+      "tables": 2,
+      "fan": 1,
+      "toilet": 1,
+      "kitchen": false,
+      "bed": false
+    }
+  },
+  {
+    "id": 19,
+    "name": "Space S",
+    "Owner": {
+      "id": 5,
+      "name": "Ethan Wright",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9f"
+      }
+    },
+    "location": "Midtown",
+    "address": "7890 Oak St",
+    "size": "170",
+    "numRooms": 3,
+    "hourlyRate": 16,
+    "halfdayRate": 140,
+    "fulldayRate": 260,
+    "rating": 4.8,
+    "rentFrom": "09:00:00",
+    "rentTo": "22:00:00",
+    "discount": 0.3,
+    "status": "open",
+    "remark": "Bright and welcoming space",
+    "createdAt": {
+      "date": "2023-02-15T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2023-02-15T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": false,
+      "chair": 12,
+      "tables": 5,
+      "fan": 2,
+      "toilet": 2,
+      "kitchen": true,
+      "bed": false
+    }
+  },
+  {
+    "id": 5,
+    "name": "Space E",
+    "Owner": {
+      "id": 5,
+      "name": "Ethan Wright",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9f"
+      }
+    },
+    "location": "Downtown",
+    "address": "6789 Elm St",
+    "size": "180",
+    "numRooms": 3,
+    "hourlyRate": 14,
+    "halfdayRate": 120,
+    "fulldayRate": 230,
+    "rating": 4.9,
+    "rentFrom": "06:00:00",
+    "rentTo": "22:00:00",
+    "discount": 0.25,
+    "status": "open",
+    "remark": "Modern and stylish space",
+    "createdAt": {
+      "date": "2023-06-10T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2023-06-10T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": false,
+      "whiteboard": true,
+      "chair": 10,
+      "tables": 6,
+      "fan": 2,
+      "toilet": 2,
+      "kitchen": true,
+      "bed": false
+    }
+  },
+  {
+    "id": 12,
+    "name": "Space L",
+    "Owner": {
+      "id": 3,
+      "name": "Charlie Brown",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9d"
+      }
+    },
+    "location": "Suburbs",
+    "address": "8765 Cedar Rd",
+    "size": "120",
+    "numRooms": 2,
+    "hourlyRate": 9,
+    "halfdayRate": 85,
+    "fulldayRate": 170,
+    "rating": 4.2,
+    "rentFrom": "07:00:00",
+    "rentTo": "20:00:00",
+    "discount": 0.15,
+    "status": "open",
+    "remark": "Comfortable and affordable",
+    "createdAt": {
+      "date": "2021-05-10T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2021-05-10T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": false,
+      "wifi": true,
+      "projector": false,
+      "whiteboard": true,
+      "chair": 7,
+      "tables": 3,
+      "fan": 1,
+      "toilet": 1,
+      "kitchen": false,
+      "bed": false
+    }
+  },
+  {
+    "id": 20,
+    "name": "Space T",
+    "Owner": {
+      "id": 8,
+      "name": "Hannah Scott",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca2"
+      }
+    },
+    "location": "Downtown",
+    "address": "3456 Oak St",
+    "size": "150",
+    "numRooms": 3,
+    "hourlyRate": 13,
+    "halfdayRate": 120,
+    "fulldayRate": 230,
+    "rating": 4.6,
+    "rentFrom": "08:00:00",
+    "rentTo": "19:00:00",
+    "discount": 0.15,
+    "status": "open",
+    "remark": "Great for team workshops",
+    "createdAt": {
+      "date": "2022-07-10T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-07-10T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": true,
+      "chair": 10,
+      "tables": 5,
+      "fan": 2,
+      "toilet": 1,
+      "kitchen": false,
+      "bed": false
+    }
+  },
+  {
+    "id": 6,
+    "name": "Space F",
+    "Owner": {
+      "id": 8,
+      "name": "Hannah Scott",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca2"
+      }
+    },
+    "location": "Uptown",
+    "address": "3456 Birch Rd",
+    "size": "130",
+    "numRooms": 2,
+    "hourlyRate": 11,
+    "halfdayRate": 105,
+    "fulldayRate": 190,
+    "rating": 4.6,
+    "rentFrom": "08:00:00",
+    "rentTo": "19:00:00",
+    "discount": 0.15,
+    "status": "open",
+    "remark": "Cozy room with great lighting",
+    "createdAt": {
+      "date": "2022-05-01T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-05-01T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": true,
+      "chair": 8,
+      "tables": 4,
+      "fan": 2,
+      "toilet": 1,
+      "kitchen": false,
+      "bed": false
+    }
+  },
+  {
+    "id": 15,
+    "name": "Space O",
+    "Owner": {
+      "id": 3,
+      "name": "Charlie Brown",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9d"
+      }
+    },
+    "location": "Midtown",
+    "address": "3456 Oak Ave",
+    "size": "180",
+    "numRooms": 4,
+    "hourlyRate": 16,
+    "halfdayRate": 140,
+    "fulldayRate": 270,
+    "rating": 4.9,
+    "rentFrom": "08:00:00",
+    "rentTo": "21:00:00",
+    "discount": 0.1,
+    "status": "open",
+    "remark": "Beautiful space with modern amenities",
+    "createdAt": {
+      "date": "2022-10-01T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-10-01T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": true,
+      "chair": 15,
+      "tables": 7,
+      "fan": 3,
+      "toilet": 3,
+      "kitchen": true,
+      "bed": false
+    }
+  },
+  {
+    "id": 16,
+    "name": "Space P",
+    "Owner": {
+      "id": 5,
+      "name": "Ethan Wright",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9f"
+      }
+    },
+    "location": "Downtown",
+    "address": "5678 Pine Ave",
+    "size": "110",
+    "numRooms": 1,
+    "hourlyRate": 6,
+    "halfdayRate": 60,
+    "fulldayRate": 120,
+    "rating": 4.1,
+    "rentFrom": "00:00:00",
+    "rentTo": "18:00:00",
+    "discount": 0.15,
+    "status": "open",
+    "remark": "Simple but functional",
+    "createdAt": {
+      "date": "2021-07-20T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2021-07-20T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": false,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": false,
+      "chair": 5,
+      "tables": 3,
+      "fan": 1,
+      "toilet": 1,
+      "kitchen": false,
+      "bed": false
+    }
+  },
+  {
+    "id": 7,
+    "name": "Space G",
+    "Owner": {
+      "id": 3,
+      "name": "Charlie Brown",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9d"
+      }
+    },
+    "location": "Downtown",
+    "address": "1234 Pine St",
+    "size": "120",
+    "numRooms": 2,
+    "hourlyRate": 9,
+    "halfdayRate": 85,
+    "fulldayRate": 160,
+    "rating": 4.2,
+    "rentFrom": "00:00:00",
+    "rentTo": "20:00:00",
+    "discount": 0.2,
+    "status": "open",
+    "remark": "Small but efficient room",
+    "createdAt": {
+      "date": "2020-08-05T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2020-08-05T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": false,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": true,
+      "chair": 5,
+      "tables": 3,
+      "fan": 1,
+      "toilet": 1,
+      "kitchen": false,
+      "bed": false
+    }
+  },
+  {
+    "id": 11,
+    "name": "Space K",
+    "Owner": {
+      "id": 5,
+      "name": "Ethan Wright",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9f"
+      }
+    },
+    "location": "Downtown",
+    "address": "1234 Pine Rd",
+    "size": "150",
+    "numRooms": 2,
+    "hourlyRate": 12,
+    "halfdayRate": 110,
+    "fulldayRate": 220,
+    "rating": 4.5,
+    "rentFrom": "09:00:00",
+    "rentTo": "20:00:00",
+    "discount": 0.2,
+    "status": "open",
+    "remark": "Spacious with great light",
+    "createdAt": {
+      "date": "2022-02-15T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-02-15T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": true,
+      "chair": 8,
+      "tables": 4,
+      "fan": 2,
+      "toilet": 1,
+      "kitchen": false,
+      "bed": false
+    }
+  },
+  {
+    "id": 13,
+    "name": "Space M",
+    "Owner": {
+      "id": 5,
+      "name": "Ethan Wright",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9f"
+      }
+    },
+    "location": "Midtown",
+    "address": "5678 Pine Rd",
+    "size": "200",
+    "numRooms": 5,
+    "hourlyRate": 18,
+    "halfdayRate": 160,
+    "fulldayRate": 290,
+    "rating": 4.6,
+    "rentFrom": "09:00:00",
+    "rentTo": "22:00:00",
+    "discount": 0.4,
+    "status": "open",
+    "remark": "Large and modern space",
+    "createdAt": {
+      "date": "2022-01-10T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-01-10T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": true,
+      "chair": 12,
+      "tables": 6,
+      "fan": 3,
+      "toilet": 2,
+      "kitchen": true,
+      "bed": false
+    }
+  },
+  {
+    "id": 17,
+    "name": "Space Q",
+    "Owner": {
+      "id": 8,
+      "name": "Hannah Scott",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca2"
+      }
+    },
+    "location": "Suburbs",
+    "address": "1234 Cedar Ave",
+    "size": "190",
+    "numRooms": 4,
+    "hourlyRate": 17,
+    "halfdayRate": 150,
+    "fulldayRate": 280,
+    "rating": 4.4,
+    "rentFrom": "09:00:00",
+    "rentTo": "22:00:00",
+    "discount": 0.2,
+    "status": "open",
+    "remark": "A very large space for creative projects",
+    "createdAt": {
+      "date": "2022-12-25T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2022-12-25T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": true,
+      "chair": 14,
+      "tables": 7,
+      "fan": 4,
+      "toilet": 3,
+      "kitchen": true,
+      "bed": false
+    }
+  },
+  {
+    "id": 1,
+    "name": "Space A",
+    "Owner": {
+      "id": 5,
+      "name": "Ethan Wright",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9f"
+      }
+    },
+    "location": "Downtown",
+    "address": "1234 Main St",
+    "size": "140",
+    "numRooms": 2,
+    "hourlyRate": 10,
+    "halfdayRate": 100,
+    "fulldayRate": 180,
+    "rating": 4.5,
+    "rentFrom": "00:00:00",
+    "rentTo": "23:29:59",
+    "discount": 0.5,
+    "status": "open",
+    "remark": "This is a nice room",
+    "createdAt": {
+      "date": "2020-01-01T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2020-01-01T00:00:00.000Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": true,
+      "chair": 10,
+      "tables": 5,
+      "fan": 2,
+      "toilet": 1,
+      "kitchen": true,
+      "bed": false,
+      "others": null
+    }
+  },
+  {
+    "id": 21,
+    "name": "New Conference Hall",
+    "Owner": {
+      "id": 5,
+      "name": "John Doe",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9f"
+      }
+    },
+    "location": "Midtown",
+    "address": "7890 Elm St",
+    "size": "200",
+    "numRooms": 5,
+    "hourlyRate": 15,
+    "halfdayRate": 120,
+    "fulldayRate": 220,
+    "rating": 0,
+    "rentFrom": "08:00:00",
+    "rentTo": "22:00:00",
+    "discount": 0.1,
+    "status": "open",
+    "remark": "Modern and spacious hall with high-tech facilities",
+    "createdAt": {
+      "date": "2025-02-26T19:27:30.489Z"
+    },
+    "updatedAt": {
+      "date": "2025-02-26T19:27:30.489Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": true,
+      "chair": 50,
+      "tables": 10,
+      "fan": 4,
+      "toilet": 3,
+      "kitchen": true,
+      "bed": false
+    }
+  },
+  {
+    "id": 2,
+    "name": "Space B",
+    "Owner": {},
+    "location": "Uptown",
+    "address": "5678 Oak Rd",
+    "size": "150",
+    "numRooms": 3,
+    "hourlyRate": 15,
+    "halfdayRate": 120,
+    "fulldayRate": 220,
+    "rating": 4.8,
+    "rentFrom": "08:00:00",
+    "rentTo": "20:00:00",
+    "discount": 0.2,
+    "status": "open",
+    "remark": "Spacious room with great views",
+    "createdAt": {
+      "date": "2021-02-01T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2025-02-27T05:23:21.447Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": true,
+      "chair": 12,
+      "tables": 6,
+      "fan": 3,
+      "toilet": 2,
+      "kitchen": false,
+      "bed": false
+    }
+  },
+  {
+    "id": 22,
+    "name": "OurSpace",
+    "location": "West",
+    "address": "1234 Main St",
+    "size": "200",
+    "numRooms": 5,
+    "hourlyRate": 15,
+    "halfdayRate": 120,
+    "fulldayRate": 220,
+    "rating": 4.7,
+    "rentFrom": "08:00:00",
+    "rentTo": "22:00:00",
+    "discount": 0.1,
+    "status": "open",
+    "remark": "Modern space with premium amenities",
+    "createdAt": {
+      "date": "2025-02-27T05:32:10.645Z"
+    },
+    "updatedAt": {
+      "date": "2025-02-27T05:32:10.645Z"
+    },
+    "facilitiy": {
+      "ac": true,
+      "wifi": true,
+      "projector": true,
+      "whiteboard": true,
+      "chair": 20,
+      "tables": 8,
+      "fan": 4,
+      "toilet": 3,
+      "kitchen": true,
+      "bed": false
+    },
+    "Owner": {
+      "id": 3,
+      "name": "Charlie Brown"
+    }
+  }]
+);
+
+db.feedback.insertMany(
+[{
+    "id": 11,
+    "customer": {
+      "id": 11,
+      "name": "Kevin Rogers",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca5"
+      }
+    },
+    "space": {
+      "id": 11,
+      "name": "Space K",
+      "location": "Downtown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c90"
+      }
+    },
+    "review": "Very spacious, perfect for conferences.",
+    "rating": 4.9,
+    "createdAt": "2021-05-03 00:00:00"
+  },
+  {
+    "id": 20,
+    "customer": {
+      "id": 20,
+      "name": "Taylor Evans",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cae"
+      }
+    },
+    "space": {
+      "id": 20,
+      "name": "Space T",
+      "location": "Downtown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c99"
+      }
+    },
+    "review": "Superb place for presentations!",
+    "rating": 4.2,
+    "createdAt": "2021-07-05 00:00:00",
+    "updatedAt": {
+      "date": "2025-02-26T16:26:06.486Z"
+    }
+  },
+  {
+    "id": 13,
+    "customer": {
+      "id": 13,
+      "name": "Michael Foster",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca7"
+      }
+    },
+    "space": {
+      "id": 13,
+      "name": "Space M",
+      "location": "Midtown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c92"
+      }
+    },
+    "review": "Modern design, great lighting.",
+    "rating": 4.6,
+    "createdAt": "2023-02-05 00:00:00"
+  },
+  {
+    "id": 15,
+    "customer": {
+      "id": 15,
+      "name": "Oliver Hughes",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca9"
+      }
+    },
+    "space": {
+      "id": 15,
+      "name": "Space O",
+      "location": "Midtown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c94"
+      }
+    },
+    "review": "Well maintained, and good for brainstorming.",
+    "rating": 4.5,
+    "createdAt": "2022-03-10 00:00:00"
+  },
+  {
+    "id": 18,
+    "customer": {
+      "id": 18,
+      "name": "Rachel White",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cac"
+      }
+    },
+    "space": {
+      "id": 18,
+      "name": "Space R",
+      "location": "Uptown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c97"
+      }
+    },
+    "review": "Excellent facilities and good service.",
+    "rating": 4.8,
+    "createdAt": "2022-12-01 00:00:00"
+  },
+  {
+    "id": 8,
+    "customer": {
+      "id": 6,
+      "name": "Fiona Adams",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca0"
+      }
+    },
+    "space": {
+      "id": 8,
+      "name": "Space H",
+      "location": "Suburbs",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c8d"
+      }
+    },
+    "review": "A bit far from the city center, but worth it.",
+    "rating": 4,
+    "createdAt": "2022-04-30 00:00:00"
+  },
+  {
+    "id": 9,
+    "customer": {
+      "id": 9,
+      "name": "Isaac Turner",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca3"
+      }
+    },
+    "space": {
+      "id": 9,
+      "name": "Space I",
+      "location": "Downtown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c8e"
+      }
+    },
+    "review": "Nice and clean, but could use a bigger space.",
+    "rating": 3.8,
+    "createdAt": "2020-08-20 00:00:00"
+  },
+  {
+    "id": 10,
+    "customer": {
+      "id": 10,
+      "name": "Jessica Lewis",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca4"
+      }
+    },
+    "space": {
+      "id": 10,
+      "name": "Space J",
+      "location": "Midtown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c8f"
+      }
+    },
+    "review": "Good amenities and central location.",
+    "rating": 4.4,
+    "createdAt": "2023-01-14 00:00:00"
+  },
+  {
+    "id": 12,
+    "customer": {
+      "id": 4,
+      "name": "Diana Green",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9e"
+      }
+    },
+    "space": {
+      "id": 12,
+      "name": "Space L",
+      "location": "Suburbs",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c91"
+      }
+    },
+    "review": "Quiet and peaceful environment.",
+    "rating": 4.1,
+    "createdAt": "2022-09-12 00:00:00"
+  },
+  {
+    "id": 3,
+    "customer": {
+      "id": 7,
+      "name": "George Miller",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca1"
+      }
+    },
+    "space": {
+      "id": 3,
+      "name": "Space C",
+      "location": "Midtown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c88"
+      }
+    },
+    "review": "A very comfortable and quiet place.",
+    "rating": 4.7,
+    "createdAt": "2022-07-01 00:00:00"
+  },
+  {
+    "id": 5,
+    "customer": {
+      "id": 2,
+      "name": "Bob Smith",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9c"
+      }
+    },
+    "space": {
+      "id": 5,
+      "name": "Space E",
+      "location": "Downtown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c8a"
+      }
+    },
+    "review": "Very convenient and well-equipped space.",
+    "rating": 4.3,
+    "createdAt": "2020-05-17 00:00:00"
+  },
+  {
+    "id": 19,
+    "customer": {
+      "id": 19,
+      "name": "Samuel Baker",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cad"
+      }
+    },
+    "space": {
+      "id": 19,
+      "name": "Space S",
+      "location": "Midtown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c98"
+      }
+    },
+    "review": "Amazing space with beautiful views.",
+    "rating": 4.7,
+    "createdAt": "2023-03-17 00:00:00"
+  },
+  {
+    "id": 7,
+    "customer": {
+      "id": 1,
+      "name": "Alice Johnson",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648c9b"
+      }
+    },
+    "space": {
+      "id": 7,
+      "name": "Space G",
+      "location": "Downtown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c8c"
+      }
+    },
+    "review": "Great location and facilities.",
+    "rating": 4.8,
+    "createdAt": "2021-09-25 00:00:00"
+  },
+  {
+    "id": 14,
+    "customer": {
+      "id": 14,
+      "name": "Natalie Carter",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca8"
+      }
+    },
+    "space": {
+      "id": 14,
+      "name": "Space N",
+      "location": "Uptown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c93"
+      }
+    },
+    "review": "Perfect for smaller gatherings.",
+    "rating": 4.3,
+    "createdAt": "2021-06-18 00:00:00"
+  },
+  {
+    "id": 16,
+    "customer": {
+      "id": 16,
+      "name": "Patrick Reed",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648caa"
+      }
+    },
+    "space": {
+      "id": 16,
+      "name": "Space P",
+      "location": "Downtown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c95"
+      }
+    },
+    "review": "Nice location but noisy in the evenings.",
+    "rating": 3.9,
+    "createdAt": "2020-06-22 00:00:00"
+  },
+  {
+    "id": 17,
+    "customer": {
+      "id": 17,
+      "name": "Quinn Hall",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cab"
+      }
+    },
+    "space": {
+      "id": 17,
+      "name": "Space Q",
+      "location": "Suburbs",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c96"
+      }
+    },
+    "review": "A great getaway from the city.",
+    "rating": 4.4,
+    "createdAt": "2021-10-14 00:00:00"
+  },
+  {
+    "id": 6,
+    "customer": {
+      "id": 8,
+      "name": "Hannah Scott",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca2"
+      }
+    },
+    "space": {
+      "id": 6,
+      "name": "Space F",
+      "location": "Uptown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c8b"
+      }
+    },
+    "review": "Ideal for small team meetings.",
+    "rating": 4.6,
+    "createdAt": "2022-01-10 00:00:00"
+  },
+  {
+    "customer": {
+      "id": 20,
+      "name": "Taylor Evans",
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cae"
+      }
+    },
+    "space": {
+      "id": 20,
+      "name": "Space N",
+      "location": "Downtown",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c99"
+      }
+    },
+    "review": "Bad",
+    "rating": 2.5,
+    "createdAt": {
+      "date": "2021-07-04T17:00:00.000Z"
+    }
+  }]
+);
+
+db.booking.insertMany(
+[{
+    "id": 1,
+    "customer": {
+      "name": "Natalie Carter",
+      "id": 14,
+      "createdAt": {
+        "date": "2021-03-19T14:45:00.000Z"
+      },
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca8"
+      }
+    },
+    "space": {
+      "id": 1,
+      "name": "Space A",
+      "location": "Downtown",
+      "hourlyRate": 10,
+      "halfdayRate": 100,
+      "fulldayRate": 180,
+      "rating": 4.5,
+      "address": "1234 Main St",
+      "spaceid": {
+        "$oid": "67bc9e44a88c21f2dc648c9a"
+      }
+    },
+    "bookingDate": "2025-01-10",
+    "startFrom": {
+      "date": "2025-01-02T10:00:00.000Z"
+    },
+    "endAt": {
+      "date": "2025-01-02T12:00:00.000Z"
+    },
+    "spacePrice": 20,
+    "sysFee": 0.6,
+    "total": 20.6,
+    "status": "booked",
+    "createdAt": {
+      "date": "2024-01-01T01:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2025-02-27T06:26:50.778Z"
+    },
+    "payment": {
+      "id": 1,
+      "amountToPay": 20.6,
+      "paid": 20.6,
+      "unpaid": 0,
+      "status": "paid",
+      "transacId": "1234567890",
+      "bank": "Chase",
+      "createdAt": {
+        "date": "2025-01-01T01:00:00.000Z"
+      },
+      "updatedAt": {
+        "date": "2025-01-01T01:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "customer": {
+      "id": 19,
+      "name": "Samuel Baker",
+      "createdAt": {
+        "date": "2019-02-10T10:20:00.000Z"
+      },
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cad"
+      }
+    },
+    "space": {
+      "id": 19,
+      "name": "Space S",
+      "location": "Midtown",
+      "hourlyRate": 16,
+      "halfdayRate": 140,
+      "fulldayRate": 260,
+      "rating": 4.8,
+      "address": "7890 Oak St",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c98"
+      }
+    },
+    "bookingDate": "2025-02-10",
+    "startFrom": {
+      "date": "2025-02-10T14:00:00.000Z"
+    },
+    "endAt": {
+      "date": "2025-02-10T17:00:00.000Z"
+    },
+    "spacePrice": 48,
+    "sysFee": 1.44,
+    "total": 49.44,
+    "status": "booked",
+    "createdAt": {
+      "date": "2025-02-09T12:30:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2025-02-09T12:30:00.000Z"
+    },
+    "payment": {
+      "id": 2,
+      "amountToPay": 49.44,
+      "paid": 49.44,
+      "unpaid": 0,
+      "status": "paid",
+      "transacId": "0987654321",
+      "bank": "Wells Fargo",
+      "createdAt": {
+        "date": "2025-02-09T12:30:00.000Z"
+      },
+      "updatedAt": {
+        "date": "2025-02-09T12:30:00.000Z"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "customer": {
+      "id": 17,
+      "name": "Quinn Hall",
+      "createdAt": {
+        "date": "2020-06-14T09:00:00.000Z"
+      },
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cab"
+      }
+    },
+    "space": {
+      "id": 19,
+      "name": "Space S",
+      "location": "Midtown",
+      "hourlyRate": 16,
+      "halfdayRate": 140,
+      "fulldayRate": 260,
+      "rating": 4.8,
+      "address": "7890 Oak St",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c98"
+      }
+    },
+    "bookingDate": "2024-05-20",
+    "startFrom": {
+      "date": "2024-05-20T10:00:00.000Z"
+    },
+    "endAt": {
+      "date": "2024-05-20T18:00:00.000Z"
+    },
+    "spacePrice": 140,
+    "sysFee": 4.2,
+    "total": 144.2,
+    "status": "booked",
+    "createdAt": {
+      "date": "2024-05-19T16:45:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2024-05-19T16:45:00.000Z"
+    },
+    "payment": {
+      "id": 5,
+      "amountToPay": 144.2,
+      "paid": 144.2,
+      "unpaid": 0,
+      "status": "paid",
+      "transacId": "6789012345",
+      "bank": "CitiBank",
+      "createdAt": {
+        "date": "2025-05-19T16:45:00.000Z"
+      },
+      "updatedAt": {
+        "date": "2025-05-19T16:45:00.000Z"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "customer": {
+      "id": 20,
+      "name": "Taylor Evans",
+      "createdAt": {
+        "date": "2017-12-30T14:00:00.000Z"
+      },
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cae"
+      }
+    },
+    "space": {
+      "id": 1,
+      "name": "Space A",
+      "location": "Downtown",
+      "hourlyRate": 10,
+      "halfdayRate": 100,
+      "fulldayRate": 180,
+      "rating": 4.5,
+      "address": "1234 Main St",
+      "spaceid": {
+        "$oid": "67bc9e44a88c21f2dc648c9a"
+      }
+    },
+    "bookingDate": "2025-04-05",
+    "startFrom": {
+      "date": "2024-04-05T13:00:00.000Z"
+    },
+    "endAt": {
+      "date": "2024-04-05T17:00:00.000Z"
+    },
+    "spacePrice": 40,
+    "sysFee": 1.2,
+    "total": 41.2,
+    "status": "cancelled",
+    "createdAt": {
+      "date": "2024-04-04T08:15:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2024-04-04T08:15:00.000Z"
+    },
+    "payment": {
+      "id": 4,
+      "amountToPay": 41.2,
+      "paid": 0,
+      "unpaid": 41.2,
+      "status": "unpaid",
+      "transacId": null,
+      "bank": null,
+      "createdAt": {
+        "date": "2025-04-04T08:15:00.000Z"
+      },
+      "updatedAt": {
+        "date": "2025-04-04T08:15:00.000Z"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "customer": {
+      "id": 18,
+      "name": "Rachel White",
+      "createdAt": {
+        "date": "2018-08-22T13:40:00.000Z"
+      },
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cac"
+      }
+    },
+    "space": {
+      "id": 20,
+      "name": "Space T",
+      "location": "Downtown",
+      "hourlyRate": 13,
+      "halfdayRate": 120,
+      "fulldayRate": 230,
+      "rating": 4.6,
+      "address": "3456 Oak St",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c99"
+      }
+    },
+    "bookingDate": "2024-03-15",
+    "startFrom": {
+      "date": "2024-03-15T09:00:00.000Z"
+    },
+    "endAt": {
+      "date": "2024-03-15T12:00:00.000Z"
+    },
+    "spacePrice": 39,
+    "sysFee": 1.17,
+    "total": 40,
+    "status": "booked",
+    "createdAt": {
+      "date": "2024-03-14T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2024-03-14T10:00:00.000Z"
+    },
+    "payment": {
+      "id": 3,
+      "amountToPay": 40,
+      "paid": 20,
+      "unpaid": 20,
+      "status": "pending",
+      "transacId": "2345678901",
+      "bank": "Bank of America",
+      "createdAt": {
+        "date": "2025-03-14T10:00:00.000Z"
+      },
+      "updatedAt": {
+        "date": "2025-03-14T10:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "customer": {
+      "id": 19,
+      "name": "Samuel Baker",
+      "createdAt": {
+        "date": "2019-02-10T10:20:00.000Z"
+      },
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cad"
+      }
+    },
+    "space": {
+      "id": 20,
+      "name": "Space T",
+      "location": "Downtown",
+      "hourlyRate": 13,
+      "halfdayRate": 120,
+      "fulldayRate": 230,
+      "rating": 4.6,
+      "address": "3456 Oak St",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c99"
+      }
+    },
+    "bookingDate": "2024-06-10",
+    "startFrom": {
+      "date": "2024-06-10T08:00:00.000Z"
+    },
+    "endAt": {
+      "date": "2024-06-10T19:00:00.000Z"
+    },
+    "spacePrice": 230,
+    "sysFee": 6.9,
+    "total": 236.9,
+    "status": "booked",
+    "createdAt": {
+      "date": "2024-06-09T11:30:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2024-06-09T11:30:00.000Z"
+    },
+    "payment": {
+      "id": 6,
+      "amountToPay": 236.9,
+      "paid": 236.9,
+      "unpaid": 0,
+      "status": "paid",
+      "transacId": "7890123456",
+      "bank": "HSBC",
+      "createdAt": {
+        "date": "2025-06-09T11:30:00.000Z"
+      },
+      "updatedAt": {
+        "date": "2025-06-09T11:30:00.000Z"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "customer": {
+      "id": 18,
+      "name": "Rachel White",
+      "createdAt": {
+        "date": "2018-08-22T13:40:00.000Z"
+      },
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cac"
+      }
+    },
+    "space": {
+      "id": 19,
+      "name": "Space S",
+      "location": "Midtown",
+      "hourlyRate": 16,
+      "halfdayRate": 140,
+      "fulldayRate": 260,
+      "rating": 4.8,
+      "address": "7890 Oak St",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c98"
+      }
+    },
+    "bookingDate": "2024-09-20",
+    "startFrom": {
+      "date": "2024-09-20T08:00:00.000Z"
+    },
+    "endAt": {
+      "date": "2024-09-20T18:00:00.000Z"
+    },
+    "spacePrice": 260,
+    "sysFee": 7.8,
+    "total": 267.8,
+    "status": "cancelled",
+    "createdAt": {
+      "date": "2024-09-19T15:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2024-09-19T15:00:00.000Z"
+    },
+    "payment": {
+      "id": 9,
+      "amountToPay": 267.8,
+      "paid": 267.8,
+      "unpaid": 0,
+      "status": "refunded",
+      "transacId": null,
+      "bank": null,
+      "createdAt": {
+        "date": "2025-09-19T15:00:00.000Z"
+      },
+      "updatedAt": {
+        "date": "2025-09-19T15:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "customer": {
+      "id": 20,
+      "name": "Taylor Evans",
+      "createdAt": {
+        "date": "2017-12-30T14:00:00.000Z"
+      },
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cae"
+      }
+    },
+    "space": {
+      "id": 18,
+      "name": "Space R",
+      "location": "Uptown",
+      "hourlyRate": 12,
+      "halfdayRate": 110,
+      "fulldayRate": 200,
+      "rating": 4.7,
+      "address": "5678 Birch St",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c97"
+      }
+    },
+    "bookingDate": "2024-10-10",
+    "startFrom": {
+      "date": "2024-10-10T13:00:00.000Z"
+    },
+    "endAt": {
+      "date": "2024-10-10T17:00:00.000Z"
+    },
+    "spacePrice": 48,
+    "sysFee": 1.44,
+    "total": 49.44,
+    "status": "cancelled",
+    "createdAt": {
+      "date": "2024-10-09T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2024-10-09T10:00:00.000Z"
+    },
+    "payment": {
+      "id": 10,
+      "amountToPay": 49.44,
+      "paid": 0,
+      "unpaid": 49.44,
+      "status": "unpaid",
+      "transacId": null,
+      "bank": null,
+      "createdAt": {
+        "date": "2025-10-09T10:00:00.000Z"
+      },
+      "updatedAt": {
+        "date": "2025-10-09T10:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": 7,
+    "customer": {
+      "id": 17,
+      "name": "Quinn Hall",
+      "createdAt": {
+        "date": "2020-06-14T09:00:00.000Z"
+      },
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cab"
+      }
+    },
+    "space": {
+      "id": 18,
+      "name": "Space R",
+      "location": "Uptown",
+      "hourlyRate": 12,
+      "halfdayRate": 110,
+      "fulldayRate": 200,
+      "rating": 4.7,
+      "address": "5678 Birch St",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c97"
+      }
+    },
+    "bookingDate": "2024-07-05",
+    "startFrom": {
+      "date": "2024-07-05T14:00:00.000Z"
+    },
+    "endAt": {
+      "date": "2024-07-05T18:00:00.000Z"
+    },
+    "spacePrice": 48,
+    "sysFee": 1.44,
+    "total": 49.44,
+    "status": "cancelled",
+    "createdAt": {
+      "date": "2024-07-04T09:15:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2024-07-04T09:15:00.000Z"
+    },
+    "payment": {
+      "id": 7,
+      "amountToPay": 49.44,
+      "paid": {
+        "$numberDecimal": "49.44"
+      },
+      "unpaid": 0,
+      "status": "refunded",
+      "transacId": null,
+      "bank": null,
+      "createdAt": {
+        "date": "2025-07-04T09:15:00.000Z"
+      },
+      "updatedAt": {
+        "date": "2025-07-04T09:15:00.000Z"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "customer": {
+      "id": 19,
+      "name": "Samuel Baker",
+      "createdAt": {
+        "date": "2019-02-10T10:20:00.000Z"
+      },
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648cad"
+      }
+    },
+    "space": {
+      "id": 17,
+      "name": "Space Q",
+      "location": "Midtown",
+      "hourlyRate": 15,
+      "halfdayRate": 130,
+      "fulldayRate": 250,
+      "rating": 4.5,
+      "address": "6789 Cedar St",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c96"
+      }
+    },
+    "bookingDate": "2024-08-12",
+    "startFrom": {
+      "date": "2024-08-12T09:00:00.000Z"
+    },
+    "endAt": {
+      "date": "2024-08-12T17:00:00.000Z"
+    },
+    "spacePrice": 130,
+    "sysFee": 3.9,
+    "total": 133.9,
+    "status": "booked",
+    "createdAt": {
+      "date": "2024-08-11T12:30:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2024-08-11T12:30:00.000Z"
+    },
+    "payment": {
+      "id": 8,
+      "amountToPay": 133.9,
+      "paid": 133.9,
+      "unpaid": 0,
+      "status": "paid",
+      "transacId": "8901234567",
+      "bank": "Wells Fargo",
+      "createdAt": {
+        "date": "2025-08-11T12:30:00.000Z"
+      },
+      "updatedAt": {
+        "date": "2025-08-11T12:30:00.000Z"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "customer": {
+      "id": 8,
+      "name": "Samuel Baker",
+      "createdAt": {
+        "date": "2019-08-14T15:00:00.000Z"
+      },
+      "userid": {
+        "$oid": "67bca321a88c21f2dc648ca2"
+      }
+    },
+    "space": {
+      "id": 19,
+      "name": "Space S",
+      "location": "Midtown",
+      "hourlyRate": 16,
+      "halfdayRate": 140,
+      "fulldayRate": 260,
+      "rating": 4.8,
+      "address": "7890 Oak St",
+      "spaceid": {
+        "$oid": "67bc9ce8a88c21f2dc648c98"
+      }
+    },
+    "bookingDate": "2024-09-20",
+    "startFrom": {
+      "date": "2024-09-20T09:00:00.000Z"
+    },
+    "endAt": {
+      "date": "2024-09-20T17:00:00.000Z"
+    },
+    "spacePrice": 140,
+    "sysFee": 4.2,
+    "total": 144.2,
+    "status": "booked",
+    "createdAt": {
+      "date": "2024-09-19T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "date": "2024-09-19T10:00:00.000Z"
+    },
+    "payment": {
+      "id": 9,
+      "amountToPay": 144.2,
+      "paid": 144.2,
+      "unpaid": 0,
+      "status": "paid",
+      "transacId": "9012345678",
+      "bank": "Bank of America",
+      "createdAt": {
+        "date": "2025-09-19T10:00:00.000Z"
+      },
+      "updatedAt": {
+        "date": "2025-09-19T10:00:00.000Z"
+      }
+    }
+  }]
+);
+
+db.booking.updateMany(
+  {},  // Adjust your query criteria as needed
+  [{
+    $set: {
+      "customer.createdAt": { $toDate: "$customer.createdAt.date" },
+      "startFrom": { $toDate: "$startFrom.date" },
+      "endAt": { $toDate: "$endAt.date" },
+      "createdAt": { $toDate: "$createdAt.date" },
+      "updatedAt": { $toDate: "$updatedAt.date" },
+      "payment.createdAt": { $toDate: "$payment.createdAt.date" },
+      "payment.updatedAt": { $toDate: "$payment.updatedAt.date" }
+    }
+  }]
+);
+
+db.user.updateMany(
+  {},
+  [{
+    $set: {
+      createdAt: { $toDate: "$createdAt.date" },
+      updatedAt: { $toDate: "$updatedAt.date" }
+    }
+  }]
+);
+
+db.space.updateMany(
+  {},
+  [
+    {
+      $set: {
+        createdAt: { $toDate: "$createdAt.date" },
+        updatedAt: { $toDate: "$updatedAt.date" }
+      }
+    }
+  ]
+);
+
+db.booking.aggregate([
+    {
+      $lookup: {
+        from: "user",
+        localField: "customer.id",   // Field in bookings
+        foreignField: "id",          // Field in users
+        as: "userMatch"
+      }
+    },
+    {
+      $set: {
+        "customer.userid": { $arrayElemAt: ["$userMatch._id", 0] }
+      }
+    },
+    {
+      $unset: "userMatch"
+    },
+    {
+      $merge: {
+        into: "booking",
+        on: "_id",
+        whenMatched: "merge",
+        whenNotMatched: "fail"
+      }
+    }
+  ]);
+
+  db.booking.aggregate([
+    {
+      $lookup: {
+        from: "space",
+        localField: "space.id",   // Field in bookings
+        foreignField: "id",          // Field in users
+        as: "userMatch"
+      }
+    },
+    {
+      $set: {
+        "space.spaceid": { $arrayElemAt: ["$userMatch._id", 0] }
+      }
+    },
+    {
+      $unset: "userMatch"
+    },
+    {
+      $merge: {
+        into: "booking",
+        on: "_id",
+        whenMatched: "merge",
+        whenNotMatched: "fail"
+      }
+    }
+  ]);
+
+  db.space.aggregate([
+    {
+      $lookup: {
+        from: "user",
+        localField: "Owner.id",   // Field in bookings
+        foreignField: "id",          // Field in users
+        as: "userMatch"
+      }
+    },
+    {
+      $set: {
+        "Owner.userid": { $arrayElemAt: ["$userMatch._id", 0] }
+      }
+    },
+    {
+      $unset: "userMatch"
+    },
+    {
+      $merge: {
+        into: "space",
+        on: "_id",
+        whenMatched: "merge",
+        whenNotMatched: "fail"
+      }
+    }
+  ]);
+
+  db.feedback.aggregate([
+    {
+      $lookup: {
+        from: "user",
+        localField: "customer.id",   // Field in bookings
+        foreignField: "id",          // Field in users
+        as: "userMatch"
+      }
+    },
+    {
+      $set: {
+        "customer.userid": { $arrayElemAt: ["$userMatch._id", 0] }
+      }
+    },
+    {
+      $unset: "userMatch"
+    },
+    {
+      $merge: {
+        into: "feedback",
+        on: "_id",
+        whenMatched: "merge",
+        whenNotMatched: "fail"
+      }
+    }
+  ]);
+
+  db.feedback.aggregate([
+    {
+      $lookup: {
+        from: "space",
+        localField: "space.id",   // Field in bookings
+        foreignField: "id",          // Field in users
+        as: "userMatch"
+      }
+    },
+    {
+      $set: {
+        "space.spaceid": { $arrayElemAt: ["$userMatch._id", 0] }
+      }
+    },
+    {
+      $unset: "userMatch"
+    },
+    {
+      $merge: {
+        into: "feedback",
+        on: "_id",
+        whenMatched: "merge",
+        whenNotMatched: "fail"
+      }
+    }
+  ]);

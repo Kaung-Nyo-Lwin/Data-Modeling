@@ -1,0 +1,71 @@
+// Define the input variables (you can change these based on your use case)
+const startHourlyRate = 0;   // Start Hourly Rate
+const endHourlyRate = 100;   // End Hourly Rate
+const step = 5;              // Step for hourly rate ranges
+
+// Generate the ranges dynamically based on the input
+let ranges = [];
+for (let i = startHourlyRate; i < endHourlyRate; i += step) {
+  ranges.push({
+    start: i,
+    end: i + step
+  });
+}
+
+db.booking.aggregate([
+  {
+    $addFields: {
+      // Determine the range for each booking based on the space's hourlyRate
+      range: {
+        $let: {
+          vars: {
+            hourlyRate: "$space.hourlyRate" // Use the space's hourlyRate
+          },
+          in: {
+            $arrayElemAt: [
+              // Find the range the hourlyRate falls into
+              {
+                $filter: {
+                  input: ranges, // Use the ranges array we defined earlier
+                  as: "range",
+                  cond: {
+                    $and: [
+                      { $gte: ["$$range.start", "$$hourlyRate"] },
+                      { $lt: ["$$hourlyRate", "$$range.end"] }
+                    ]
+                  }
+                },
+              },
+              0 // Take the first matching range
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    $group: {
+      _id: {
+        start: "$range.start",  // Group by the start of the range
+        end: "$range.end"       // Group by the end of the range
+      },
+      totalBookings: { $count: {} }, // Count the total number of bookings in this range
+      spacePriceTotal: { $sum: "$spacePrice" }, // Sum of spacePrice for this range
+      sysFeeTotal: { $sum: "$sysFee" },         // Sum of sysFee for this range
+      totalAmount: { $sum: "$total" }            // Sum of total for this range
+    }
+  },
+  {
+    $project: {
+      _id: 0, // Exclude _id field
+      range: { $concat: [{ $toString: "$_id.start" }, " - ", { $toString: "$_id.end" }] }, // Concatenate start and end to form a range string
+      totalBookings: 1,
+      spacePrice: "$spacePriceTotal",
+      sysFee: "$sysFeeTotal",
+      total: "$totalAmount"
+    }
+  },
+  {
+    $sort: { "range": 1 } // Sort the results by range in ascending order
+  }
+])

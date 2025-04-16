@@ -1,0 +1,37 @@
+db.booking.aggregate([
+  {
+    $addFields: {
+      daysOnPlatform: {
+        $floor: {
+          $divide: [
+            { $subtract: [new Date(), "$customer.createdAt"] }, // Subtract current date from customer.createdAt
+            1000 * 60 * 60 * 24 // Convert milliseconds to days
+          ]
+        }
+      }
+    }
+  },
+  {
+    $group: {
+      _id: "$customer.id", // Group by customer id
+      username: { $first: "$customer.name" }, // Get the first customer's name
+      totalAmount: { $sum: "$total" }, // Sum of all total amounts
+      daysOnPlatform: { $first: "$daysOnPlatform" } // Get the number of days on the platform for this customer
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      username: 1, // Customer name
+      daysOnPlatform: 1, // Number of days on the platform
+      totalAmount: 1, // Total amount spent
+      avgSpendingPerDay: {
+        $cond: {
+          if: { $gt: ["$daysOnPlatform", 0] },
+          then: { $divide: ["$totalAmount", "$daysOnPlatform"] },
+          else: 0
+        }
+      } // Average spending per day, conditionally handle division by 0
+    }
+  }
+])

@@ -1,0 +1,162 @@
+[
+  {
+   _id: 1,
+   customer : {_id: 14, name: 'Natalie Carter'},
+   space : {_id: 1, name: "Space A", location: "Downtown"},
+   review : "This is a nice place",
+   rating : 4.5,
+   createdAt : "2020-01-01 00:00:00",
+},
+  {
+    "_id": 2,
+    "customer": { "_id": 3, "name": "Charlie Brown" },
+    "space": { "_id": 2, "name": "Space B", "location": "Uptown" },
+    "review": "Great space for collaboration!",
+    "rating": 4.2,
+    "createdAt": "2021-03-15 00:00:00"
+  },
+  {
+    "_id": 3,
+    "customer": { "_id": 7, "name": "George Miller" },
+    "space": { "_id": 3, "name": "Space C", "location": "Midtown" },
+    "review": "A very comfortable and quiet place.",
+    "rating": 4.7,
+    "createdAt": "2022-07-01 00:00:00"
+  },
+  {
+    "_id": 4,
+    "customer": { "_id": 5, "name": "Ethan Wright" },
+    "space": { "_id": 4, "name": "Space D", "location": "Suburbs" },
+    "review": "Perfect for team workshops.",
+    "rating": 4.5,
+    "createdAt": "2021-11-20 00:00:00"
+  },
+  {
+    "_id": 5,
+    "customer": { "_id": 2, "name": "Bob Smith" },
+    "space": { "_id": 5, "name": "Space E", "location": "Downtown" },
+    "review": "Very convenient and well-equipped space.",
+    "rating": 4.3,
+    "createdAt": "2020-05-17 00:00:00"
+  },
+  {
+    "_id": 6,
+    "customer": { "_id": 8, "name": "Hannah Scott" },
+    "space": { "_id": 6, "name": "Space F", "location": "Uptown" },
+    "review": "Ideal for small team meetings.",
+    "rating": 4.6,
+    "createdAt": "2022-01-10 00:00:00"
+  },
+  {
+    "_id": 7,
+    "customer": { "_id": 1, "name": "Alice Johnson" },
+    "space": { "_id": 7, "name": "Space G", "location": "Downtown" },
+    "review": "Great location and facilities.",
+    "rating": 4.8,
+    "createdAt": "2021-09-25 00:00:00"
+  },
+  {
+    "_id": 8,
+    "customer": { "_id": 6, "name": "Fiona Adams" },
+    "space": { "_id": 8, "name": "Space H", "location": "Suburbs" },
+    "review": "A bit far from the city center, but worth it.",
+    "rating": 4.0,
+    "createdAt": "2022-04-30 00:00:00"
+  },
+  {
+    "_id": 9,
+    "customer": { "_id": 9, "name": "Isaac Turner" },
+    "space": { "_id": 9, "name": "Space I", "location": "Downtown" },
+    "review": "Nice and clean, but could use a bigger space.",
+    "rating": 3.8,
+    "createdAt": "2020-08-20 00:00:00"
+  },
+  {
+    "_id": 10,
+    "customer": { "_id": 10, "name": "Jessica Lewis" },
+    "space": { "_id": 10, "name": "Space J", "location": "Midtown" },
+    "review": "Good amenities and central location.",
+    "rating": 4.4,
+    "createdAt": "2023-01-14 00:00:00"
+  },
+  {
+    "_id": 11,
+    "customer": { "_id": 11, "name": "Kevin Rogers" },
+    "space": { "_id": 11, "name": "Space K", "location": "Downtown" },
+    "review": "Very spacious, perfect for conferences.",
+    "rating": 4.9,
+    "createdAt": "2021-05-03 00:00:00"
+  },
+  {
+    "_id": 12,
+    "customer": { "_id": 4, "name": "Diana Green" },
+    "space": { "_id": 12, "name": "Space L", "location": "Suburbs" },
+    "review": "Quiet and peaceful environment.",
+    "rating": 4.1,
+    "createdAt": "2022-09-12 00:00:00"
+  },
+  {
+    "_id": 13,
+    "customer": { "_id": 13, "name": "Michael Foster" },
+    "space": { "_id": 13, "name": "Space M", "location": "Midtown" },
+    "review": "Modern design, great lighting.",
+    "rating": 4.6,
+    "createdAt": "2023-02-05 00:00:00"
+  },
+  {
+    "_id": 14,
+    "customer": { "_id": 14, "name": "Natalie Carter" },
+    "space": { "_id": 14, "name": "Space N", "location": "Uptown" },
+    "review": "Perfect for smaller gatherings.",
+    "rating": 4.3,
+    "createdAt": "2021-06-18 00:00:00"
+  },
+  {
+    "_id": 15,
+    "customer": { "_id": 15, "name": "Oliver Hughes" },
+    "space": { "_id": 15, "name": "Space O", "location": "Midtown" },
+    "review": "Well maintained, and good for brainstorming.",
+    "rating": 4.5,
+    "createdAt": "2022-03-10 00:00:00"
+  },
+  {
+    "_id": 16,
+    "customer": { "_id": 16, "name": "Patrick Reed" },
+    "space": { "_id": 16, "name": "Space P", "location": "Downtown" },
+    "review": "Nice location but noisy in the evenings.",
+    "rating": 3.9,
+    "createdAt": "2020-06-22 00:00:00"
+  },
+  {
+    "_id": 17,
+    "customer": { "_id": 17, "name": "Quinn Hall" },
+    "space": { "_id": 17, "name": "Space Q", "location": "Suburbs" },
+    "review": "A great getaway from the city.",
+    "rating": 4.4,
+    "createdAt": "2021-10-14 00:00:00"
+  },
+  {
+    "_id": 18,
+    "customer": { "_id": 18, "name": "Rachel White" },
+    "space": { "_id": 18, "name": "Space R", "location": "Uptown" },
+    "review": "Excellent facilities and good service.",
+    "rating": 4.8,
+    "createdAt": "2022-12-01 00:00:00"
+  },
+  {
+    "_id": 19,
+    "customer": { "_id": 19, "name": "Samuel Baker" },
+    "space": { "_id": 19, "name": "Space S", "location": "Midtown" },
+    "review": "Amazing space with beautiful views.",
+    "rating": 4.7,
+    "createdAt": "2023-03-17 00:00:00"
+  },
+  {
+    "_id": 20,
+    "customer": { "_id": 20, "name": "Taylor Evans" },
+    "space": { "_id": 20, "name": "Space T", "location": "Downtown" },
+    "review": "Great for presentations and workshops.",
+    "rating": 4.2,
+    "createdAt": "2021-07-05 00:00:00"
+  }
+]
